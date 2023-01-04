@@ -1,0 +1,416 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ebebeb;
+    width: 100%;
+}
+header{
+    background-color: #351151;
+    width: 100%;
+}
+.superiorHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+.nomeLoja{
+    color: white;
+    text-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+}
+.containerLogo{
+    min-width: fit-content;
+    margin: 0px 40px;
+}
+.containerPesquisa{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+}
+.inputPesquisa{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    outline: none;
+}
+.containerIconPesquisa{
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header svg{
+    width: 34px;
+    height: 34px;
+}
+.containerIcons{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 0px 40px;
+}
+.containerIcons svg:nth-child(2){
+    margin: 0px 30px;
+    fill: white;
+}
+.containerIcons svg:nth-child(1){
+    fill: white;
+}
+.containerPesquisaMobile{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media only screen and (max-width : 1200px){
+    .containerPesquisaMobile{
+        display: flex;
+    }
+    .containerPesquisaDesktop{
+        display: none;
+    }
+    .containerPesquisaMobile{
+        width: 90%;
+        margin: auto;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width : 680px){
+    .iconForDesck{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+.cursorPointer{
+    cursor: pointer;
+}
+
+.containerIconsMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    fill: white;
+    color: white;
+    margin: 10px 20px;
+}
+.containerIconsMenu span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 8px;
+    padding: 20px 0px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+
+}
+.containerIconsMenu span:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 10px #3b135a;
+    letter-spacing: 1px;
+}
+
+.containerIconsMenu span p{
+    font-size: 1em;
+    margin-top: 10px;
+}
+.containerIconsMenu{
+    display: none;
+}
+
+
+/* fim do header*/
+
+.containerAtrativo{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+.containerBlockAtrativ{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.containerBlockAtrativ:nth-child(2),
+    .containerBlockAtrativ:nth-child(3){
+        border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+.containerBlockAtrativ img{
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.titleAtrativ{
+    font-size: 1.1em;
+}
+
+
+.containerItemMain{
+    display: flex;
+    align-items: center;
+}
+.containerProdutoMain{
+    width: 50%;
+    margin: 0px 20px;
+}
+.produtoMain{
+    display: flex;
+    background-color: white;
+
+}
+.containerLeftProdutoMain{
+    width: 50%;
+}
+.containerLeftProdutoMain img{
+    width: 100%;
+}
+.containerRightProdutoMain{
+    width: 50%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nomeProdutoMain {
+    font-size: 26px;
+    margin: 0px;
+    color: #000;
+}
+
+
+.continerPrecoParcelas{
+    margin: 14px 0px;
+}
+.apenas{
+    font-size: 1em;
+    color: #666;
+}
+.precoProdutoMain{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 4px 0px;
+}
+.parcelasProdutoMain{
+    font-size: 1em;
+    color: #666;
+}
+
+.containerEconomia{
+    background-color: #00a650;
+    width: fit-content;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+.economia{
+    color: white;
+    font-size: 1em;
+}
+.economia span{
+    font-weight: bold;
+}
+.containerAvaliacaoNumeroVendas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.avaliacao,
+.numeroVendas{
+    font-size: 1em;
+}
+.containerBtnVerMais{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.btnVerMais{
+    width: 100%;
+    font-size: 1em;
+    border: none;
+    padding: 10px 0px;
+    background-color: #3483fa;
+    color: white;
+
+}
+
+
+
+main{
+    padding-bottom: 20px;
+}
+main h1{
+    font-size: 26px;
+    font-weight: 300;
+    margin: 20px 40px;
+    color: #666;
+}
+.container{
+    padding: 0px 30px;
+}
+.containerBlocosProduto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.containerProduto{
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 3%);
+    margin: 10px;
+
+    width: 300px;
+    height: fit-content;
+}
+.containerDescricao{
+    display: none;
+}
+.containerProduto:hover .containerTags{
+    display: none;
+}
+.containerProduto:hover .containerDescricao{
+    display: block;
+}
+
+
+.containerImgProduto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerImgProduto img{
+    width: 100%;
+}
+.continerInfosProtuto{
+    border-top: 1px solid rgba(221, 221, 221, 0.5);
+    padding-top: 10px;
+}
+.containerPreco{
+    display: flex;
+    align-items: center;
+}
+.desconto,
+.parcelas{
+    color: #00a650;
+    font-size: 1em;
+}
+
+.preco{
+    font-size: 1.7em;
+    margin-right: 20px;
+}
+.desconto{
+    font-size: 0.9em;
+    
+}
+.parcelas{
+    margin-top: 20px;
+}
+.containerTags{
+    display: flex;
+    margin-top: 20px;
+}
+.containerDescricao{
+    font-size: 1em;
+    color: #666;
+    margin-top: 12px;
+}
+.frete,
+.garantia{
+    padding: 6px 10px;
+    font-size: 0.8em;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+}
+.frete{
+    background-color: #00a650;
+    border: 1px solid #00a650;
+}
+.garantia{
+    border: 1px solid #3483fa;
+    color: #3483fa;
+}
+
+
+@media only screen and (max-width : 690px){
+    .inputPesquisa{
+        font-size: 0.8em;
+    }
+    .desconto,
+    .parcelas{
+        font-size: 1em;
+    }
+
+    .preco{
+        font-size: 1.4em;
+    }
+    .desconto{
+        font-size: 0.7em;
+        
+    }
+    .frete,
+    .garantia{
+        font-size: 0.7em;
+        padding: 4px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.banner{
+    width: 100%;
+}
+.containerCredibilidade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.credibilidadeBlock{
+    text-align: center;
+    width: 30%;
+}
+.titleCredibili{
+    color: #4b4b4b;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+.infoCredibili{
+    color: #999;
+    font-size: 15px;
+    line-height: 1.2;
+}
