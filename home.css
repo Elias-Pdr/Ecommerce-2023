@@ -1,9 +1,175 @@
+:root{
+    ---maxWidth: 90%;
+    --fontSizePadrao: 1em;
+    --fontSize2: 2em;
+    --fontSize3: 3em;
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.shadow{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shadow > div{
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #666;
+    padding: 30px;
+    position: absolute;
+    margin: 20px;
+}
+#cntrMensagemLogin{
+    display: none;
+}
+
+.shadow .cntrX{
+    background-color: #ffffff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+
+}
+.shadow .x{
+    width: 100%;
+    height: 100%;
+}
+.shadow .cntrMensagemLogin span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.shadow span svg{
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+}
+.shadow h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.shadow .cntrMensagemLogin p{
+    font-size: 1em;
+}
+
+@media only screen and (max-width : 650px){
+    .shadow .cntrMensagemLogin span svg{
+        width: 50px;
+        height: 50px;
+    }
+    .shadow .cntrMensagemLogin h1{
+        font-size: 1.6em;
+    }
+    .shadow .cntrMensagemLogin p{
+        font-size: 1em;
+    }}
+
+
+#cntrMensagemContaCriada{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.cntrSuperiorContaCriada{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 30px;
+    padding-bottom: 0px;
+
+}
+.cntrCupon{
+    display: flex;
+    margin: 20px;
+
+}
+.cntrPrimeiraParteCupom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3483fa;
+    color: white;
+    padding: 12px;
+    border-right: 4px solid rgb(255, 255, 255);
+    border-right-style: dashed;
+    min-width: fit-content;
+}
+.cntrPrimeiraParteCupom p{
+    font-size: .8em;
+}
+
+.cntrPrimeiraParteCupom p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 4px;
+}
+
+.cntrSegundaParteCupom{
+    border: 1px solid #ddd;
+    border-left: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cntrSegundaParteCupom span:nth-child(1){
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tetleCupom{
+    font-size: 1em;
+    font-weight: bold;
+}
+.validadeCupom{
+    font-size: .8em;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.cntrSegundaParteCupom button{
+    border: 1px solid #3483fa;
+    color: #3483fa;
+    padding: 10px 14px;
+    background-color: white;
+    font-weight: bold;
+}
+@media only screen and (max-width : 666px){
+    .tetleCupom {
+        font-size: .95em;
+    }
+    .shadow h1 {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width : 530px){
+    .shadow h1 {
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+
 body{
     background-color: #ebebeb;
     width: 100%;
@@ -37,7 +203,7 @@ header{
     width: 100%;
     padding: 10px 20px;
     border: none;
-    font-size: 1em;
+    font-size: var(--fontSizePadrao);
     outline: none;
 }
 .containerIconPesquisa{
@@ -47,8 +213,8 @@ header{
     justify-content: center;
 }
 header svg{
-    width: 34px;
-    height: 34px;
+    width: 24px;
+    height: 24px;
 }
 .containerIcons{
     display: flex;
@@ -114,6 +280,7 @@ header svg{
     background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: 8px;
+    margin-bottom: 18px;
     padding: 20px 0px;
     border-radius: 6px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
@@ -126,7 +293,7 @@ header svg{
 }
 
 .containerIconsMenu span p{
-    font-size: 1em;
+    font-size: var(--fontSizePadrao);
     margin-top: 10px;
 }
 .containerIconsMenu{
@@ -136,281 +303,243 @@ header svg{
 
 /* fim do header*/
 
-.containerAtrativo{
-    display: flex;
-    align-items: center;
-    background-color: white;
+
+#favoritos{
+    display: none;
+}
+.gradeProdutos{
     padding: 20px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    margin: 20px;
 }
-.containerBlockAtrativ{
+.gradeProdutos > h1{
+    font-size: var(--fontSizePadrao);
+    margin-bottom: 20px;
+}
+.gradeProdutos > div{
     display: flex;
-    align-items: center;
-    width: 100%;
-}
-.containerBlockAtrativ:nth-child(2),
-    .containerBlockAtrativ:nth-child(3){
-        border-left: 1px solid #ddd;
-    padding-left: 20px;
-}
-.containerBlockAtrativ img{
-    margin-right: 10px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-}
-
-.titleAtrativ{
-    font-size: 1.1em;
-}
-
-
-.containerItemMain{
-    display: flex;
-    align-items: center;
-}
-.containerProdutoMain{
-    width: 50%;
-    margin: 0px 20px;
-}
-.produtoMain{
-    display: flex;
-    background-color: white;
-
-}
-.containerLeftProdutoMain{
-    width: 50%;
-}
-.containerLeftProdutoMain img{
-    width: 100%;
-}
-.containerRightProdutoMain{
-    width: 50%;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.nomeProdutoMain {
-    font-size: 26px;
-    margin: 0px;
-    color: #000;
-}
-
-
-.continerPrecoParcelas{
-    margin: 14px 0px;
-}
-.apenas{
-    font-size: 1em;
-    color: #666;
-}
-.precoProdutoMain{
-    font-size: 2em;
-    font-weight: bold;
-    margin: 4px 0px;
-}
-.parcelasProdutoMain{
-    font-size: 1em;
-    color: #666;
-}
-
-.containerEconomia{
-    background-color: #00a650;
-    width: fit-content;
-    padding: 4px 10px;
-    border-radius: 4px;
-}
-.economia{
-    color: white;
-    font-size: 1em;
-}
-.economia span{
-    font-weight: bold;
-}
-.containerAvaliacaoNumeroVendas{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.avaliacao,
-.numeroVendas{
-    font-size: 1em;
-}
-.containerBtnVerMais{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-.btnVerMais{
-    width: 100%;
-    font-size: 1em;
-    border: none;
-    padding: 10px 0px;
-    background-color: #3483fa;
-    color: white;
-
-}
-
-
-
-main{
-    padding-bottom: 20px;
-}
-main h1{
-    font-size: 26px;
-    font-weight: 300;
-    margin: 20px 40px;
-    color: #666;
-}
-.container{
-    padding: 0px 30px;
-}
-.containerBlocosProduto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
-
-
-
-.containerProduto{
+.gradeProdutos .blocoProduto{
     background-color: white;
-    padding: 16px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 3%);
-    margin: 10px;
-
-    width: 300px;
-    height: fit-content;
+    border: 1px solid #fff;
+    width: 24%;
+    margin: 5px;
+    cursor: pointer;
 }
-.containerDescricao{
-    display: none;
+.gradeProdutos .blocoProduto:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+    border: 1px solid #ddd;
 }
-.containerProduto:hover .containerTags{
-    display: none;
+.gradeProdutos .blocoProduto:hover .containerImgProduto{
+    padding: 2px;
 }
-.containerProduto:hover .containerDescricao{
-    display: block;
-}
-
-
-.containerImgProduto{
-    width: 100%;
+.gradeProdutos .containerImgProduto{
+    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
-.containerImgProduto img{
+.gradeProdutos .containerImgProduto img{
     width: 100%;
 }
-.continerInfosProtuto{
-    border-top: 1px solid rgba(221, 221, 221, 0.5);
-    padding-top: 10px;
+.gradeProdutos .containerNomeProduto p{
+    padding: 10px;
+    font-size: var(--fontSizePadrao);
+    color: black;
 }
-.containerPreco{
+.gradeProdutos .containerTags{
     display: flex;
     align-items: center;
+    padding: 0px 10px;
+    margin-top: 10px;
 }
-.desconto,
-.parcelas{
-    color: #00a650;
-    font-size: 1em;
+.gradeProdutos .cntrFreteGratis{
+    background-color: rgba(0, 128, 0, 0.0);
+    padding: 4px 6px;
+    font-size: .7em;
+    color: green;
+    border: 1px solid green;
+    font-weight: bold;
+}
+.gradeProdutos .blocoProduto:hover .cntrFreteGratis{
+    background-color: rgba(0, 128, 0, 0.05);
+}
+.gradeProdutos .containerPrecoNumeroVendas{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: green;
+    margin: 10px 0px;
+}
+.gradeProdutos .rs{
+    font-size: 1.1em;
+}
+.gradeProdutos .precoProtuto{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-left: 4px;
+}
+.gradeProdutos .blocoProduto:hover .precoProtuto,
+.gradeProdutos .blocoProduto:hover .rs{
+    animation: changeBackgroundColor 5s infinite; /* propriedade de animação */
+}
+.gradeProdutos .blocoProduto:hover .cntrBtnFavorito{
+    display: flex;
 }
 
-.preco{
-    font-size: 1.7em;
-    margin-right: 20px;
-}
-.desconto{
-    font-size: 0.9em;
-    
-}
-.parcelas{
-    margin-top: 20px;
-}
-.containerTags{
+@keyframes changeBackgroundColor {
+    0% {
+      color: green;
+    }
+    50% {
+      color: rgb(2, 2, 185);
+    }
+    100% {
+      color: green;
+    }
+  }
+.gradeProdutos .numeroVendas{
     display: flex;
-    margin-top: 20px;
-}
-.containerDescricao{
-    font-size: 1em;
+    align-items: flex-end;
+    font-size: .8em;
     color: #666;
-    margin-top: 12px;
 }
-.frete,
-.garantia{
-    padding: 6px 10px;
-    font-size: 0.8em;
+
+
+@media only screen and (max-width : 1060px){
+    .gradeProdutos .blocoProduto{
+        width: 32%;
+    }
+}
+@media only screen and (max-width : 810px){
+    .gradeProdutos .blocoProduto{
+        width: 48%;
+    }
+}
+@media only screen and (max-width : 560px){
+    .gradeProdutos .blocoProduto{
+        width: 47%;
+    }
+}
+@media only screen and (max-width : 1200px){
+    .gradeProdutos .containerNomeProduto p{
+        font-size: .9em;
+    }
+}                                                                                                                                                                                                                                                                                 
+/* fim do favoritos*/
+
+
+
+/*inicio do container dos produtos main*/
+.cntrBtnFavorito{
+    margin-top: 10px;
     margin-right: 10px;
-    font-weight: 600;
-    color: white;
+    position: absolute;
+    display: none;
+    justify-content: flex-end;
 }
-.frete{
-    background-color: #00a650;
-    border: 1px solid #00a650;
+.cntrBtnFavorito svg{
+    width: 20px;
+    height: 20px;
 }
-.garantia{
-    border: 1px solid #3483fa;
-    color: #3483fa;
+
+/*fim do container dos produtos main*/
+
+.containerSegurancaPagamento{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px 4px;
+}
+
+.containerSegurancaPagamento div{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    padding: 0px 10px;
+}
+.containerSegurancaPagamento div:nth-child(2){
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 
-@media only screen and (max-width : 690px){
-    .inputPesquisa{
-        font-size: 0.8em;
-    }
-    .desconto,
-    .parcelas{
-        font-size: 1em;
-    }
 
-    .preco{
-        font-size: 1.4em;
-    }
-    .desconto{
-        font-size: 0.7em;
-        
-    }
-    .frete,
-    .garantia{
-        font-size: 0.7em;
-        padding: 4px 0px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+.containerSegurancaPagamento img{
+    border-radius: 50%;
+    width: 50px;
 }
+
+.containerSegurancaPagamento p{
+    margin-left: 6px;
+    font-size: 0.8em;
+}
+
+
+
+
 
 .banner{
     width: 100%;
 }
-.containerCredibilidade{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.containerSegurancaPagamento2{
     background-color: white;
-    padding: 16px;
-    margin: 10px;
+
+    margin: 20px 10px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    padding: 10px 4px;
 }
-.credibilidadeBlock{
-    text-align: center;
+.containerSegurancaPagamento2 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.containerSegurancaPagamento2 span,
+.containerSegurancaPagamento2 p{
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 4px;
 }
-.titleCredibili{
-    color: #4b4b4b;
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1.4;
-    margin: 16px 0 0;
+.containerSegurancaPagamento2 img{
+    padding: 10px 0px;
+    width: 30%;
+    max-width: 50px;
 }
-.infoCredibili{
+.containerSegurancaPagamento2 .containerTitle{
+    font-size: .8em;
+    font-weight: bold;
+}
+.containerSegurancaPagamento2 .containerDescricao{
+    font-size: .8em;
+    color: #666;
+}
+
+
+
+.containerCnpj{
     color: #999;
-    font-size: 15px;
-    line-height: 1.2;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    padding: 20px 40px;
+    font-size: small;
+}
+.containerCnpj p{
+    margin-bottom: 4px;
+}
+
+.containerAnuncio{
+    margin: 20px ;
+}
+.containerAnuncio img{
+    width: 100%;
 }

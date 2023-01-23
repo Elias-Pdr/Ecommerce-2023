@@ -1,0 +1,160 @@
+:root{
+    ---maxWidth: 90%;
+    --fontSizePadrao: 1em;
+    --fontSize2: 2em;
+    --fontSize3: 3em;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: rgb(245, 245, 245);
+}
+body{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background-color: #351151;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+}
+
+main {
+    max-width: 450px;
+    border: 1px solid #ddd;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 10px hwb(0 0% 100% / 0.1);
+}
+.cntrSvgPerfil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.cntrSvgPerfil > svg{
+    width: 100px;
+    height: 100px;
+}
+
+.cntrInputs div div{
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+.cntrInputs .cntrEmail{
+    margin-top: 0px;
+}
+.cntrInputs svg{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+}
+.cntrInputs .olhoFechado{
+    display: block;
+}
+.cntrInputs .olhoAberto{
+    display: none;
+}
+.cntrInputs input{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: .9em;
+}
+.cntrInputs button{
+    width: 100%;
+    border: none;
+    padding: 16px;
+    margin-top: 10px;
+    font-size: .9em;
+    color: #666;
+    cursor: pointer;
+}
+.cntrBtnCadastrar{
+    padding: 20px 0px;
+    color: rgb(1, 1, 197);
+    font-size: .9em;
+    cursor: pointer;
+    width: fit-content;
+}
+
+
+.cntrHR{
+    display: flex;
+    align-items: center;
+}
+.cntrHR hr{
+    width: 100%;
+    height: 1px;
+}
+.cntrHR p{
+    font-size: .9em;
+    padding: 20px;
+}
+
+.cntrGoogle{
+    border: 1px solid #999;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 50px;
+
+}
+.cntrGoogle svg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    
+}
+.cntrGoogle p{
+    font-size: .9em;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+#cntrEntrar{
+    /*
+    display: block;
+    display: none;
+    */
+    display: block;
+}
+#cntrCadastrar{
+    /*
+    display: block;
+    display: none;
+    */
+    display: none;
+}
+
+#cntrCadastrar .cntrBox1,
+#cntrCadastrar .cntrBox2,
+#cntrCadastrar .cntrBox3{
+    display: none;
+}
+
+.cntrBox1{
+    /*
+    display: block;
+    display: none;
+    */
+    display: none;
+}
+
+.tetle{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}

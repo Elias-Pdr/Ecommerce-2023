@@ -1,0 +1,228 @@
+:root{
+    ---maxWidth: 90%;
+    --fontSizePadrao: 1em;
+    --fontSize2: 2em;
+    --fontSize3: 3em;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shadow{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shadowCntrEditarPerfil{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    padding: 12px;
+    padding-top: 60px;
+    position: absolute;
+    border-radius: 10px;
+
+}
+.shadowCntrSvgPerfil{
+    background-color: white;
+    top: -50px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 2px;
+}
+.shadowCntrSvgPerfil svg{
+    width: 100px;
+    height: 100px;
+}
+.shadowCntrEditarPerfil h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.shadowCntrInput{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 10px;
+    width: 100%;
+}
+.shadowCntrInput label{
+    font-size: .8em;
+    position: relative;
+    background-color: white;
+    padding: 2px 6px;
+
+    top: 10px;
+    left: 10px;
+}
+.shadowCntrInput input{
+    font-size: 1em;
+
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 12px;
+}
+.shadowCntrBtn{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.shadowCntrBtn button{
+    width: 50%;
+    padding: 14px;
+    border: none;
+
+    text-align: center;
+    background-color: #2968c8;
+    color: #fff;
+    border-radius: 6px;
+}
+.shadowCntrBtn button:nth-child(1){
+    margin-right: 10px;
+    background-color: #999;
+}
+
+body{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+header h1{
+    font-size: 1em;
+    margin-left: 20px;
+    width: 100%;
+    text-align: center;
+}
+header svg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.cntrSvgPerfil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    background-color: #351151;
+}
+.cntrSvgPerfil > svg{
+    width: 100px;
+    height: 100px;
+}
+.cntrSvgPerfil  svg path{
+    fill: rgba(255, 255, 255, 0.5);
+}
+.cntrToqueEdit{
+    background-color: #351151;
+    text-align: center;
+}
+.cntrToqueEdit p{
+    padding: 6px 0px;
+    font-size: .95em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+main{
+    padding: 20px;
+    display: flex;
+}
+.cntrMain{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    width: 50%;
+    height: fit-content;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.cntrMain:nth-child(1){
+    margin-right: 20px;
+}
+.cntrH1{
+    padding: 40px;
+}
+.cntrH1 h1{
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+.cntrH1 h2{
+    font-size: 1.3em;
+}
+.cntrDados span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid #ddd;
+}
+.cntrDados span:nth-child(1){
+    border-top: 1px solid #ddd;
+}
+
+.cntrDados p{
+    font-size: 1em;
+}
+.cntrDados svg{
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+}
+
+
+.containerCnpj{
+    color: #999;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    padding: 20px 40px;
+    font-size: small;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+.containerCnpj p{
+    margin-bottom: 4px;
+}
+
+@media only screen and (max-width : 1050px){
+    main{
+        flex-direction: column;
+    }
+    .cntrMain{
+        width: 96%;
+        margin: 20px auto;
+    }
+}  
+
+/*
+Opa, bom dia :)
+
+Cria ou modifica uma arte no photoshop e coloca no fundo da tela de login
+Lista de cupons no carrinho
+Dps partiu fazer a integração com a SumUp
+
+Bom trabalho <3 
+
+*/

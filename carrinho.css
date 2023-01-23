@@ -1,0 +1,391 @@
+:root{
+    ---maxWidth: 800px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ebebeb;
+    width: 100%;
+}
+header{
+    background-color: #351151;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+}
+
+main{
+    display: flex;
+    width: 100%;
+}
+.cntrLeft{
+    width: 70%;
+    margin: 20px;
+}
+.cntrRight{
+    width: 30%;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+
+.cntrProduto{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+.cntrProduto:hover{
+    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 20%);
+}
+
+
+
+.quadrado{
+    border: 1px solid #999;
+    background-color: rgba(0, 0, 0, 0.01);
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 6px;
+
+    width: 20px;
+    height: 20px;
+}
+.cntrProduto .cntrImg{
+    margin: 0px 20px;
+}
+.cntrProduto .cntrImg img{
+    width: 180px;
+}
+.cntrProduto .nomeProduto{
+    font-size: 1em;
+}
+.cntrProduto .precoProduto{
+    font-size: 1.5em;
+    margin: 14px 0px;
+}
+.cntrProduto .cntrQuantidade{
+    display: flex;
+    width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cntrProduto .btnMenos,
+.cntrProduto .btnMais,
+.cntrProduto .cntrTxtQuantidade p{
+    font-size: .8em;
+    padding: 4px 14px;
+    background-color: rgba(221, 221, 221, 0.5);
+    cursor: pointer;
+}
+.cntrProduto .cntrTxtQuantidade{
+    background-color: white;
+}
+.cntrProduto .cntrTxtQuantidade p{
+    padding: 6px 16px;
+    border-left: 1px solid rgba(221, 221, 221, 0.5);
+    border-right: 1px solid rgba(221, 221, 221, 0.5);
+    background-color: white;
+
+}
+
+
+
+
+
+
+.cntrInfosPessoais h2{
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.cntrInfosPessoais .nomeDaPessoa{
+    color: rgb(51, 51, 51);
+    font-size: 1em;
+    margin-top: 14px;
+
+}
+.cntrInfosPessoais .numeroDaPessoa{
+    color: rgb(51, 51, 51);
+    margin-bottom: 14px;
+}
+.cntrInfosPessoais > p{
+    font-size: .8em;
+    color: #666;
+    margin: 6px 0px;
+}
+
+.boxLateral{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.boxLateral .cntrCupom{
+}
+.boxLateral h1{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.boxLateral .cntrInputCupom{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.boxLateral .cntrInputCupom span{
+    padding: 8px 14px;
+}
+.boxLateral .cntrInputCupom button{
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+}
+
+.boxLateral .cntrInputCupom p:nth-child(1){
+    color: #000;
+}
+.boxLateral .cntrInputCupom p:nth-child(2){
+    color: #666;
+    margin-top: 10px;
+}
+
+
+.boxLateral .cntrInputCupom input{
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid #999;
+    border-right: none;
+    outline: none;
+}
+.boxLateral .cntrInputCupom button{
+    border-left: 1px solid #999;
+    background-color: #3483fa;
+    color: white;
+    border: 1px solid #3483fa;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+.cntrItensSelecionados p{
+    font-size: .8em;
+    color: #666;
+    margin: 10px 0px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+.cntrItensSelecionados .selecionarTudo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.cntrItensSelecionados .quadrado{
+    width: 20px;
+    height: 20px;
+    border-color: black;
+}
+.cntrItensSelecionados .selecionarTudo p{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.cntrValorTotal h1{
+    margin-bottom: 20px;
+}
+.cntrValorTotal span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0px 10px;
+}
+.cntrValorTotal p{
+    color: #666;
+    font-size: .9em;
+}
+.cntrValorTotal button {
+    width: 100%;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    display: inline-block;
+    font-family: Proxima Nova,-apple-system,Roboto,Arial,sans-serif;
+    font-size: .9em;
+    font-weight: 600;
+    padding: 10px 24px;
+    text-align: center;
+    background-color: #2968c8;
+    color: #fff;
+    margin-top: 20px;
+}
+#totalTetle,
+#totalNumber{
+    color: rgb(85, 13, 13);
+    font-weight: bold;
+    font-size: .9em;
+
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: block;
+}
+
+.containerCnpj{
+    color: #999;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    padding: 20px 40px;
+    font-size: small;
+}
+.containerCnpj p{
+    margin-bottom: 4px;
+}
+
+.cntrPagarCarrinho{
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.cntrPagarCarrinho .cntrCupomMobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.cntrPagarCarrinho .cntrCupomMobile svg{
+    width: 20px;
+    height: 20px;
+}
+.cntrPagarCarrinho .cntrCupomMobile h1{
+    font-size: .9em;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.cntrPagarCarrinho .cntrCupomMobile div{
+    display: flex;
+    align-items: center;
+}
+.cntrPagarCarrinho .cntrCupomMobile span{
+    display: flex;
+    align-items: center;
+}
+.cntrPagarCarrinho .cntrCupomMobile span p{
+    color: #666;
+    font-size: .8em;
+}
+.cntrPagarCarrinho .cntrCupomMobile span svg{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+.cntrPagarCarrinho .cntrCupomMobile span svg path{ fill: #666;}
+
+.cntrPagarCarrinho .containerPrecoMobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cntrPagarCarrinho .ctnrSelecionarTudo p{
+    margin-left: 10px;
+    font-size: .9em;
+}
+.cntrPagarCarrinho .containerPrecoMobile span{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 100%;
+}
+.cntrPagarCarrinho .tetleValorTotal{
+    font-size: 1em;
+    margin-right: 10px;
+}
+.cntrPagarCarrinho .numberValorTotal{
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.cntrPagarCarrinho button{
+    border: none;
+    font-size: 1em;
+    padding: 16px 24px;
+    color: white;
+    background-color: #3483fa;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width : 950px){
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 150px;
+    }
+    .cntrLeft {
+        width: 100%;
+        margin: 0px;
+    }
+    .cntrListaProdutosCarrinho{
+        margin: 20px;
+    }
+    .cntrRight{
+        display: none;
+    }
+    .cntrPagarCarrinho{
+        display: block;
+    }
+    .containerCnpj{
+        display: none;
+    }
+    footer{
+        position: fixed;
+    }
+} 
+
+@media only screen and (max-width : 800px){
+    .cntrProduto .cntrImg img {
+        width: 160px;
+    }
+    .cntrProduto .nomeProduto {
+        font-size: .9em;
+    }
+    .cntrProduto .precoProduto {
+        font-size: 1em;
+    }
+    .cntrProduto .btnMenos,
+    .cntrProduto .btnMais,
+    .cntrProduto .cntrTxtQuantidade p {
+        font-size: .76em;
+        padding: 4px 10px;
+    }
+}
+
+
