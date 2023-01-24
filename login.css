@@ -11,12 +11,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 html{
-    background-color: rgb(245, 245, 245);
+
 }
 body{
-    background-color: #fff;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-color: #351151;
 }
 header{
     background-color: #351151;
@@ -24,14 +24,42 @@ header{
     color: white;
     padding: 10px 20px;
 }
+.cntrMain{
+    display: flex;
+    width: 100%;
 
+}
+.cntrImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+.cntrImg img{
+    width: 100%;
+}
+@media only screen and (max-width : 1100px){
+    .cntrImg{
+       display: none;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: hsla(274, 65%, 19%, 0.3);
+    }
+}
 main {
+    background-color: white;
     max-width: 450px;
+    min-width: 360px;
+    width: 450px;
     border: 1px solid #ddd;
     margin: 40px;
     padding: 20px;
     box-shadow: 0px 0px 20px 10px hwb(0 0% 100% / 0.1);
 }
+
 .cntrSvgPerfil{
     width: 100%;
     display: flex;
@@ -74,7 +102,7 @@ main {
 .cntrInputs button{
     width: 100%;
     border: none;
-    padding: 16px;
+    padding: 12px;
     margin-top: 10px;
     font-size: .9em;
     color: #666;
@@ -82,10 +110,17 @@ main {
 }
 .cntrBtnCadastrar{
     padding: 20px 0px;
-    color: rgb(1, 1, 197);
     font-size: .9em;
     cursor: pointer;
     width: fit-content;
+    display: flex;
+}
+.cntrBtnCadastrar P{
+    color: rgb(1, 1, 197);
+}
+.cntrBtnCadastrar P:nth-child(1){
+    color: #999;
+    margin-right: 8px;
 }
 
 
@@ -107,7 +142,7 @@ main {
     padding: 0px 20px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px 0px 10px 0px;
     height: 50px;
 
 }
@@ -130,23 +165,31 @@ main {
     display: block;
     display: none;
     */
-    display: block;
+    display: none;
 }
 #cntrCadastrar{
     /*
     display: block;
     display: none;
     */
-    display: none;
-}
-
-#cntrCadastrar .cntrBox1,
-#cntrCadastrar .cntrBox2,
-#cntrCadastrar .cntrBox3{
-    display: none;
+    display: block;
 }
 
 .cntrBox1{
+    /*
+    display: block;
+    display: none;
+    */
+    display: block;
+}
+.cntrBox2{
+    /*
+    display: block;
+    display: none;
+    */
+    display: none;
+}
+.cntrBox3{
     /*
     display: block;
     display: none;
@@ -156,5 +199,9 @@ main {
 
 .tetle{
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+}
+.imgFundo img{
+    
 }
