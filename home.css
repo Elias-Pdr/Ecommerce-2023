@@ -29,7 +29,9 @@
     position: absolute;
     margin: 20px;
 }
-#cntrMensagemLogin{
+.shadow,
+#cntrMensagemLogin,
+#cntrMensagemContaCriada{
     display: none;
 }
 
@@ -83,7 +85,6 @@
 
 
 #cntrMensagemContaCriada{
-    display: flex;
     flex-direction: column;
     padding: 0px;
 }

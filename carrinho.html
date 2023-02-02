@@ -8,129 +8,206 @@
     <link rel="stylesheet" href="carrinho.css">
 </head>
 <body>
-    <header>
+    <header class="headerMobile">
         <header>
             <h1 onclick="window.location.href = 'home.html'">Dropshipping</h1>
         </header>
     </header>
 
     <main>
-        <div class="cntrLeft">
+        <div class="cntrLeft cntrLeftMobile">
             <div class="cntrListaProdutosCarrinho">
 
                 <div class="cntrProduto">
-                    <div class="quadrado"></div>
+                    <label for="checkbox1" class="cntrQuadrado">
+                        <input id="checkbox1" type="checkbox" class="checkboxProduto" onclick="checkBox('1')">
+                    </label>
                     <div class="cntrImg">
                         <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
                     </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
+                    <span id="cntrNomePrecoQuantidade1">
+                        <p id="nomeProduto1" class="nomeProduto">1.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto1"  class="precoProduto">R$ 100,00</p>
                         <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '1')">-</div>
                             <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
+                                <p class="txtQuantidade" id="txtQuantidade1">1</p>
                             </div>
-                            <div class="btnMais">+</div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '1')">+</div>
                         </div>
+                    </span>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho1">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('1')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
+                                                
                     </span>
                 </div>
                 
                 <div class="cntrProduto">
-                    <div class="quadrado"></div>
+                    <label for="checkbox2" class="cntrQuadrado">
+                        <input id="checkbox2" type="checkbox" class="checkboxProduto" onclick="checkBox('2')">
+                    </label>
                     <div class="cntrImg">
                         <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
                     </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
+                    <span id="cntrNomePrecoQuantidade2">
+                        <p id="nomeProduto2" class="nomeProduto">2.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto2"  class="precoProduto">R$ 200,00</p>
                         <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '2')">-</div>
                             <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
+                                <p class="txtQuantidade" id="txtQuantidade2">1</p>
                             </div>
-                            <div class="btnMais">+</div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '2')">+</div>
                         </div>
                     </span>
-                </div>
-
-                
-                <div class="cntrProduto">
-                    <div class="quadrado"></div>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
-                            </div>
-                            <div class="btnMais">+</div>
-                        </div>
-                    </span>
-                </div>
-                
-                <div class="cntrProduto">
-                    <div class="quadrado"></div>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
-                            </div>
-                            <div class="btnMais">+</div>
-                        </div>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho2">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('2')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
+                                                
                     </span>
                 </div>
 
                 
                 <div class="cntrProduto">
-                    <div class="quadrado"></div>
+                    <label for="checkbox3" class="cntrQuadrado">
+                        <input id="checkbox3" type="checkbox" class="checkboxProduto" onclick="checkBox('3')">
+                    </label>
                     <div class="cntrImg">
                         <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
                     </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
+                    <span id="cntrNomePrecoQuantidade3">
+                        <p id="nomeProduto3" class="nomeProduto">3.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto3"  class="precoProduto">R$ 300,00</p>
                         <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '3')">-</div>
                             <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
+                                <p class="txtQuantidade" id="txtQuantidade3">1</p>
                             </div>
-                            <div class="btnMais">+</div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '3')">+</div>
                         </div>
+                    </span>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho3">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('3')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
+                                                
                     </span>
                 </div>
                 
                 <div class="cntrProduto">
-                    <div class="quadrado"></div>
+                    <label for="checkbox4" class="cntrQuadrado">
+                        <input id="checkbox4" type="checkbox" class="checkboxProduto" onclick="checkBox('4')">
+                    </label>
                     <div class="cntrImg">
                         <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
                     </div>
-                    <span>
-                        <p class="nomeProduto">Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p class="precoProduto">R$ 123,45</p>
+                    <span id="cntrNomePrecoQuantidade4">
+                        <p id="nomeProduto4" class="nomeProduto">4.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto4"  class="precoProduto">R$ 400,00</p>
                         <div class="cntrQuantidade">
-                            <div class="btnMenos">-</div>
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '4')">-</div>
                             <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade">1</p>
+                                <p class="txtQuantidade" id="txtQuantidade4">1</p>
                             </div>
-                            <div class="btnMais">+</div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '4')">+</div>
                         </div>
+                    </span>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho4">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('4')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
+                    </span>
+                </div>
+
+                
+                <div class="cntrProduto">
+                    <label for="checkbox5" class="cntrQuadrado">
+                        <input id="checkbox5" type="checkbox" class="checkboxProduto" onclick="checkBox('5')">
+                    </label>
+                    <div class="cntrImg">
+                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                    </div>
+                    <span id="cntrNomePrecoQuantidade5">
+                        <p id="nomeProduto5" class="nomeProduto">5.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto5"  class="precoProduto">R$ 500,00</p>
+                        <div class="cntrQuantidade">
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '5')">-</div>
+                            <div class="cntrTxtQuantidade">
+                                <p class="txtQuantidade" id="txtQuantidade5">1</p>
+                            </div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '5')">+</div>
+                        </div>
+                    </span>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho5">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('5')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
+
+                    </span>
+                </div>
+                
+                <div class="cntrProduto">
+                    <label for="checkbox6" class="cntrQuadrado">
+                        <input id="checkbox6" type="checkbox" class="checkboxProduto" onclick="checkBox('6')">
+                    </label>
+                    <div class="cntrImg">
+                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                    </div>
+                    <span id="cntrNomePrecoQuantidade6">
+                        <p id="nomeProduto6" class="nomeProduto">6. X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        <p id="precoProduto6"  class="precoProduto">R$ 600,00</p>
+                        <div class="cntrQuantidade">
+                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '6')">-</div>
+                            <div class="cntrTxtQuantidade">
+                                <p class="txtQuantidade" id="txtQuantidade6">1</p>
+                            </div>
+                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '6')">+</div>
+                        </div>
+                    </span>
+                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho6">
+                        <p>Deseja excluir esse item do carrinho?</p>
+                        <span class="cntrBtnExcluirCarrinho">
+                            <button onclick="cancelarExclusao('6')">Cancelar</button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+                                Excluir
+                            </button>
+                        </span>
                     </span>
                 </div>
 
             </div>
         </div>
-        <div class="cntrRight">
+        
+        <div class="cntrRight cntrRightMobile">
 
             <div class="boxLateral">
                <div class="cntrInfosPessoais">
@@ -147,14 +224,12 @@
             <div class="boxLateral">
                 <div class="cntrItensSelecionados">
                     <h1>Selecionados</h1>
-                    <p>Notebook X5werwer92w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                    <p>rweNoteerwrwer8 rwewerGb Ram Core I5 Cinza Asus</p>
-                    <p>rweNotewerwwe92w 25weram Cw winza Asus</p>
-                    <p>werweNrwerwekwe X515ja-ww6 m8w Ram Core I5 Cinza Asus</p>
-                    <p>Noteborwerweoke qe5ja-ejww56wenza Asus</p>
+
+                    <p id="listaProduto"></p>
+
                     <div class="selecionarTudo">
-                        <div class="quadrado"></div>
-                        <p>Selecionar os 9 itens do carrinho</p>
+                        <input id="checkboxAll1" type="checkbox" class="checkboxAll" onclick="checkBoxAll('0')">
+                        <label for="checkboxAll1">Selecionar os <span id="numItensCarrinho">9</span> itens do carrinho</label>
                     </div>
                 </div>
             </div>
@@ -167,10 +242,35 @@
                     <div class="cntrInputCupom">
                         <span>
                             <p>Cupom de primeira compra</p>
-                            <p>- 5% (10,34 reais)</p>
-                        </span>                        <button>Add</button>
+                            <p>- 5%</p>
+                        </span>
+                        <button id="aplicarCupomDesconto" onclick="addCupomDesconto()">Aplicar</button>
                     </div>
 
+                </div>
+            </div>
+
+            <div class="boxLateral">
+                <div class="cntrFrete">
+                    
+                    <h1>Dados da entrega</h1>
+
+                    <div class="cntrFreteGratis cntrEstimativa">
+                        <p>Estimativa de entrega</p>
+                        <span>
+                            <p>12 de julho</p>
+                        </span>
+                    </div>
+
+                    <div class="cntrFreteGratis">
+                        <p>Frete grátis</p>
+                        <span>
+                            <p>
+                                Aplicado
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M497.36 69.995c-7.532-7.545-19.753-7.558-27.285-.032L238.582 300.845l-83.522-90.713c-7.217-7.834-19.419-8.342-27.266-1.126-7.841 7.217-8.343 19.425-1.126 27.266l97.126 105.481a19.273 19.273 0 0 0 13.784 6.22c.141.006.277.006.412.006a19.317 19.317 0 0 0 13.623-5.628L497.322 97.286c7.551-7.525 7.564-19.746.038-27.291z" fill="#000000" data-original="#000000" class=""></path><path d="M492.703 236.703c-10.658 0-19.296 8.638-19.296 19.297 0 119.883-97.524 217.407-217.407 217.407-119.876 0-217.407-97.524-217.407-217.407 0-119.876 97.531-217.407 217.407-217.407 10.658 0 19.297-8.638 19.297-19.296C275.297 8.638 266.658 0 256 0 114.84 0 0 114.84 0 256c0 141.154 114.84 256 256 256 141.154 0 256-114.846 256-256 0-10.658-8.638-19.297-19.297-19.297z" fill="#000000" data-original="#000000" class=""></path></g></svg>
+                            </p>
+                        </span>
+                    </div>
                 </div>
             </div>
 
@@ -184,17 +284,18 @@
                     </span>
                     <span>
                         <p>Cupom de desconto</p>
-                        <p>R$ 0,00</p>
+                        <p id="cupomDesconto_txt">R$ 0,00</p>
                     </span>
                     <span>
                         <p>Itens selecionados</p>
-                        <p>R$ 0,00</p>
+                        <p id="itensSelecionadosPreco">R$ 0,00</p>
                     </span>
                     <span>
                         <p id="totalTetle">Total</p>
                         <p id="totalNumber">R$ 0,00</p>
                     </span>
-                    <button onclick="window.location.href = 'sumUp.html'">Pagar agora</button>
+                    <button onclick="window.location.href = 'confirmarCompra.html'">Pagar agora</button>
+                    <button id="btnCancelarMobile">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -216,12 +317,12 @@
             </div>
             <div class="containerPrecoMobile">
                 <span class="ctnrSelecionarTudo">
-                    <div class="quadrado"></div>
-                    <p>Selecionar tudo</p>
+                    <input id="checkboxAll2" type="checkbox" class="checkboxAll" onclick="checkBoxAll('1')">
+                    <label for="checkboxAll2">Selecionar tudo</label>
                 </span>
                 <span>
                     <p class="tetleValorTotal">Valor total:</p>
-                    <p class="numberValorTotal">R$ 123,45</p>
+                    <p class="numberValorTotal">R$ 0,00</p>
                     <button>Continuar</button>
 
                 </span>
@@ -234,6 +335,60 @@
         </div>
 
     </footer>
+
+
+
+    <script>
+
+        function checkBox(indiceKey){
+            // capturar a quantidade do item selecionado
+            let quantidade_itemSelecionado = parseInt(document.getElementById("txtQuantidade" + indiceKey).innerHTML)
+            
+            // capturar o preco do item selecionado
+            let preco_itemSelecionado = parseFloat(document.getElementById("precoProduto" + indiceKey).innerHTML.replace("R$ ", "").replace(",", ".")).toFixed(2) 
+
+        }
+
+        function cnttlrQuantidade(operacao, id) {
+            let txtQuantidade = document.getElementById("txtQuantidade" + id)
+            let numbQuantidade = parseInt(txtQuantidade.innerHTML)
+            let cntrExcluirItemCarrinho = document.getElementById("cntrExcluirItemCarrinho" + id)
+            let cntrNomePrecoQuantidade = document.getElementById("cntrNomePrecoQuantidade" + id)
+            let preco_itemSelecionado = document.getElementById("precoProduto" + id)
+
+            
+            if (operacao == "adicao") {
+                let preco = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", "."))/numbQuantidade
+                numbQuantidade++
+                // dobrar o preco do produto
+                preco_itemSelecionado.innerHTML = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", ".")) + preco
+                preco_itemSelecionado.innerHTML = "R$ " + parseFloat(preco_itemSelecionado.innerHTML).toFixed(2).replace(".", ",")
+            }
+            else if (operacao == "subitracao") {
+                if (numbQuantidade == 1) {
+                    cntrExcluirItemCarrinho.style.display = "flex"
+                    cntrNomePrecoQuantidade.style.display = "none"
+                }
+                else{
+                    let preco = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", "."))
+                    let precoUnidade = preco/numbQuantidade
+                    preco_itemSelecionado.innerHTML = preco - precoUnidade
+                    preco_itemSelecionado.innerHTML = "R$ " + parseFloat(preco_itemSelecionado.innerHTML).toFixed(2).replace(".", ",")
+                    numbQuantidade--
+                }
+            }
+            txtQuantidade.innerHTML = numbQuantidade
+        }
+
+        function cancelarExclusao(id){
+            let cntrExcluirItemCarrinho = document.getElementById("cntrExcluirItemCarrinho" + id)
+            let cntrNomePrecoQuantidade = document.getElementById("cntrNomePrecoQuantidade" + id)
+            cntrExcluirItemCarrinho.style.display = "none"
+            cntrNomePrecoQuantidade.style.display = "block"
+        }
+
+
+    </script>
 
 </body>
 </html>
