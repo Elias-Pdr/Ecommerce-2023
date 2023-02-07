@@ -129,15 +129,27 @@ function carregarDadosProduto() {
     }
 
             
+    let _4_8_estrela = '<div class="containerEstrelasAvaliacaoCaract"><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><g fill="none" fill-rule="evenodd"><path fill="transparent" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z" stoke-width="1" stroke="rgba(0, 0, 0, 0.25)" vector-effect="non-scaling-stroke"></path><path fill="#3483FA" d="M5.272 8.026L2.137 9.679l.6-3.502L.2 3.697l3.505-.51L5.272 0z" stoke-width="1" stroke="#3483FA" vector-effect="non-scaling-stroke"></path></g></svg></div>'
+            
+    let estrelaCompleta = '<svg  aria-hidden="true" width="16.8" estrelaCompletaheight="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>'
+    let estrelaMeia = '<svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><g><path class="metadeBanca" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z" stoke-width="1" stroke="rgba(0, 0, 0, 0.25)" vector-effect="non-scaling-stroke"></path><path fill="#3483FA" d="M5.272 8.026L2.137 9.679l.6-3.502L.2 3.697l3.505-.51L5.272 0z" stoke-width="1" stroke="#3483FA" vector-effect="non-scaling-stroke"></path></g></svg>'
+    let estrelaBranca = '<svg class="estrelabranca" aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>'
+    let _4estrelas = estrelaCompleta+estrelaCompleta+estrelaCompleta+estrelaCompleta
 
 
 
     switch (produtoSelecionadoId) {
         case '1':
-            for (let i = 0; i < cntrMain3Caracter.length; i++) {
-                cntrMain3Caracter[i].style.display = "block"
+
+            // simulação de avaliações
+            barraClassificacao5.style.width = "60%" //  5 estrelas
+            barraClassificacao4.style.width = "70%"
+            barraClassificacao3.style.width = "80%"
+            barraClassificacao2.style.width = "90%"
+            barraClassificacao1.style.width = "100%" // 1 estrela
+        
+            cntrMain3Caracter[0].style.display = "block"
                 
-            }
 
             let indice1 = 0;
                 
@@ -158,6 +170,62 @@ function carregarDadosProduto() {
                 indice1 += 4;
 
             }
+
+            document.querySelector(".cntrCaractOneCollun").style.display = "none"
+
+
+            descricaoCompletaProdutoSelecionado.innerHTML = '<p>O kit é composto pelos seguintes produtos:</p>'
+
+            descricaoCompletaProdutoSelecionado.innerHTML += '2x WHEY PROTEIN - pote de 900g cada<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += '2x BCAA - pote de 100g cada no sabor tangerina<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += '2x CREATINA - pote de 100g cada no sabor tangerina<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += '1x COQUETELEIRA - 600ml<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += '<p>BENEFÍCIOS:</p>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'a) Aumento da MASSA MAGRA<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'b) Ganho de FORÇA<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'c) Alto índice de EFICIÊNCIA PROTEICA<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'd) Acelera a RECUPERAÇÃO MUSCULAR<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'e) MANUTENÇÃO MUSCULAR<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'f) Aumento de ENERGIA<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += 'g) RESSÍNTESE das FONTES ENERGÉTICAS (ATP)<br>'
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>WHEY PROTEIN Giant Whey Bodybuilders é um suplemento de alto valor biológico, composto pela proteína concentrada do soro do leite, proteína isolada da soja e a proteína hidrolisada do trigo, proteínas de alto valor biológico, rica em BCAA's (aminoácidos de cadeia ramificada). Aumentando o ganho de massa magra quando associada a uma rotina de exercícios e um alimentação balanceada.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>BCAA é uma combinação perfeita de três aminoácidos essenciais para o corpo, sendo eles: leucina, isoleucina e valina. Auxilia na diminuição das dores musculares e fadiga, gerando assim maior energia e força, reduzindo a sensação de cansaço no pós-treino.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>CREATINA é responsável pela produção de energia em células musculares, fornecendo um elevado nível de disposição durante os treinos. Que funciona como um repositor de energia.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>COQUETELEIRA possui um material reforçado, sendo o ideal para a dissolução do produto. Enviada de acordo com a disponibilidade em estoque.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "MODO DE PREPARO:<br>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>1. Whey Protein (Giant Whey) : Diluir 4 colheres de sopa rasa (40g) em 350 ml de água e bater em liquidificador ou mixer até a diluição total do produto.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>2. BCAA: Diluir 1 colher de chá (5g) em 200 ml de água e bater em liquidificador ou coqueteleira até a diluição total do produto.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>3. Creatina: Diluir 2 colheres de chá rasa (10g) em 100 ml de água e bater em liquidificador ou coqueteleira até a diluição total do produto.</p>"
+            descricaoCompletaProdutoSelecionado.innerHTML += "<p>Produtos com validade de 18 a 24 meses.</p>"
+
+            var primeiraCaract = "primeiraCaract"
+            var segundaCaract = "segundaCaract"
+            var terceiraCaract = "segundaCaract"
+
+            avaliacaoCaractProdutoSelecionado.innerHTML = '<span><p>' + primeiraCaract + '</p>' + _4estrelas + estrelaCompleta
+            avaliacaoCaractProdutoSelecionado.innerHTML += '<span><p>' + segundaCaract + '</p>' + _4estrelas + estrelaMeia
+            avaliacaoCaractProdutoSelecionado.innerHTML += '<span><p>' + terceiraCaract + '</p>' + _4estrelas + estrelaBranca
+        
+
+            ultimaEstrelaReseha1.innerHTML = estrelaCompleta
+            ultimaEstrelaReseha2.innerHTML = estrelaCompleta
+
+            cntrMaisImgSrc1 = 'https://http2.mlstatic.com/D_NQ_NP_794271-MLA52891058403_122022-O.webp'
+            cntrMaisImgSrc2 = 'https://http2.mlstatic.com/D_NQ_NP_794271-MLA52891058403_122022-O.webp'
+            cntrMaisImgSrc3 = 'https://http2.mlstatic.com/D_NQ_NP_794271-MLA52891058403_122022-O.webp'
+            cntrMaisImgSrc4 = 'https://http2.mlstatic.com/D_NQ_NP_794271-MLA52891058403_122022-O.webp'
+            cntrMaisImgSrc5 = 'https://http2.mlstatic.com/D_NQ_NP_794271-MLA52891058403_122022-O.webp'
+
+
+            for (let i = 0; i < 2; i++) {
+                cntrMaisImg[i].innerHTML = '<img class="maisImgProduto" src="'+ cntrMaisImgSrc1 + '" alt="">'
+                cntrMaisImg[i].innerHTML += '<img class="maisImgProduto" src="'+ cntrMaisImgSrc2 + '" alt="">'
+                cntrMaisImg[i].innerHTML += '<img class="maisImgProduto" src="'+ cntrMaisImgSrc3 + '" alt="">'
+                cntrMaisImg[i].innerHTML += '<img class="maisImgProduto" src="'+ cntrMaisImgSrc4 + '" alt="">'
+                cntrMaisImg[i].innerHTML += '<img class="maisImgProduto" src="'+ cntrMaisImgSrc5 + '" alt="">'
+            }
+
+
 
         break;
 
@@ -253,16 +321,9 @@ function carregarDadosProduto() {
             descricaoCompletaProdutoSelecionado.innerHTML += "<p>3. Creatina: Diluir 2 colheres de chá rasa (10g) em 100 ml de água e bater em liquidificador ou coqueteleira até a diluição total do produto.</p>"
             descricaoCompletaProdutoSelecionado.innerHTML += "<p>Produtos com validade de 18 a 24 meses.</p>"
 
-            let primeiraCaract = "primeiraCaract"
-            let segundaCaract = "segundaCaract"
-            let terceiraCaract = "segundaCaract"
-
-            let _4_8_estrela = '<div class="containerEstrelasAvaliacaoCaract"><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg><svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><g fill="none" fill-rule="evenodd"><path fill="transparent" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z" stoke-width="1" stroke="rgba(0, 0, 0, 0.25)" vector-effect="non-scaling-stroke"></path><path fill="#3483FA" d="M5.272 8.026L2.137 9.679l.6-3.502L.2 3.697l3.505-.51L5.272 0z" stoke-width="1" stroke="#3483FA" vector-effect="non-scaling-stroke"></path></g></svg></div>'
-            
-            let estrelaCompleta = '<svg  aria-hidden="true" width="16.8" estrelaCompletaheight="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>'
-            let estrelaMeia = '<svg aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><g><path class="metadeBanca" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z" stoke-width="1" stroke="rgba(0, 0, 0, 0.25)" vector-effect="non-scaling-stroke"></path><path fill="#3483FA" d="M5.272 8.026L2.137 9.679l.6-3.502L.2 3.697l3.505-.51L5.272 0z" stoke-width="1" stroke="#3483FA" vector-effect="non-scaling-stroke"></path></g></svg>'
-            let estrelaBranca = '<svg class="estrelabranca" aria-hidden="true" width="16.8" height="16" viewBox="0 0 10 10"><path fill="#3483FA" fill-rule="evenodd" d="M5.056 8L1.931 9.648l.597-3.49L0 3.684l3.494-.509L5.056 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>'
-            let _4estrelas = estrelaCompleta+estrelaCompleta+estrelaCompleta+estrelaCompleta
+            var primeiraCaract = "primeiraCaract"
+            var segundaCaract = "segundaCaract"
+            var terceiraCaract = "segundaCaract"
 
             avaliacaoCaractProdutoSelecionado.innerHTML = '<span><p>' + primeiraCaract + '</p>' + _4estrelas + estrelaCompleta
             avaliacaoCaractProdutoSelecionado.innerHTML += '<span><p>' + segundaCaract + '</p>' + _4estrelas + estrelaMeia

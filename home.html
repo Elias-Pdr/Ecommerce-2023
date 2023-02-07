@@ -372,6 +372,11 @@
 
     <script>
 
+        // verificar se se está logado ou não
+        if (localStorage.getItem("sttsLogin") == null) {
+            localStorage.setItem("sttsLogin", "deslogado");
+        }
+
         let containerMenu = document.getElementById("containerIconsMenu")
 
         function menu() {

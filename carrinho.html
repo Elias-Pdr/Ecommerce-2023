@@ -16,9 +16,9 @@
 
     <main>
         <div class="cntrLeft cntrLeftMobile">
-            <div class="cntrListaProdutosCarrinho">
+            <div class="cntrListaProdutosCarrinho" id="cntrListaProdutosCarrinho">
 
-                <div class="cntrProduto">
+                <!--div class="cntrProduto">
                     <label for="checkbox1" class="cntrQuadrado">
                         <input id="checkbox1" type="checkbox" class="checkboxProduto" onclick="checkBox('1')">
                     </label>
@@ -47,175 +47,29 @@
                         </span>
                                                 
                     </span>
-                </div>
+                </div-->
                 
-                <div class="cntrProduto">
-                    <label for="checkbox2" class="cntrQuadrado">
-                        <input id="checkbox2" type="checkbox" class="checkboxProduto" onclick="checkBox('2')">
-                    </label>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span id="cntrNomePrecoQuantidade2">
-                        <p id="nomeProduto2" class="nomeProduto">2.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p id="precoProduto2"  class="precoProduto">R$ 200,00</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '2')">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade" id="txtQuantidade2">1</p>
-                            </div>
-                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '2')">+</div>
-                        </div>
-                    </span>
-                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho2">
-                        <p>Deseja excluir esse item do carrinho?</p>
-                        <span class="cntrBtnExcluirCarrinho">
-                            <button onclick="cancelarExclusao('2')">Cancelar</button>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
-                                Excluir
-                            </button>
-                        </span>
-                                                
-                    </span>
-                </div>
-
-                
-                <div class="cntrProduto">
-                    <label for="checkbox3" class="cntrQuadrado">
-                        <input id="checkbox3" type="checkbox" class="checkboxProduto" onclick="checkBox('3')">
-                    </label>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span id="cntrNomePrecoQuantidade3">
-                        <p id="nomeProduto3" class="nomeProduto">3.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p id="precoProduto3"  class="precoProduto">R$ 300,00</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '3')">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade" id="txtQuantidade3">1</p>
-                            </div>
-                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '3')">+</div>
-                        </div>
-                    </span>
-                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho3">
-                        <p>Deseja excluir esse item do carrinho?</p>
-                        <span class="cntrBtnExcluirCarrinho">
-                            <button onclick="cancelarExclusao('3')">Cancelar</button>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
-                                Excluir
-                            </button>
-                        </span>
-                                                
-                    </span>
-                </div>
-                
-                <div class="cntrProduto">
-                    <label for="checkbox4" class="cntrQuadrado">
-                        <input id="checkbox4" type="checkbox" class="checkboxProduto" onclick="checkBox('4')">
-                    </label>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span id="cntrNomePrecoQuantidade4">
-                        <p id="nomeProduto4" class="nomeProduto">4.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p id="precoProduto4"  class="precoProduto">R$ 400,00</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '4')">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade" id="txtQuantidade4">1</p>
-                            </div>
-                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '4')">+</div>
-                        </div>
-                    </span>
-                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho4">
-                        <p>Deseja excluir esse item do carrinho?</p>
-                        <span class="cntrBtnExcluirCarrinho">
-                            <button onclick="cancelarExclusao('4')">Cancelar</button>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
-                                Excluir
-                            </button>
-                        </span>
-                    </span>
-                </div>
-
-                
-                <div class="cntrProduto">
-                    <label for="checkbox5" class="cntrQuadrado">
-                        <input id="checkbox5" type="checkbox" class="checkboxProduto" onclick="checkBox('5')">
-                    </label>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span id="cntrNomePrecoQuantidade5">
-                        <p id="nomeProduto5" class="nomeProduto">5.Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p id="precoProduto5"  class="precoProduto">R$ 500,00</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '5')">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade" id="txtQuantidade5">1</p>
-                            </div>
-                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '5')">+</div>
-                        </div>
-                    </span>
-                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho5">
-                        <p>Deseja excluir esse item do carrinho?</p>
-                        <span class="cntrBtnExcluirCarrinho">
-                            <button onclick="cancelarExclusao('5')">Cancelar</button>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
-                                Excluir
-                            </button>
-                        </span>
-
-                    </span>
-                </div>
-                
-                <div class="cntrProduto">
-                    <label for="checkbox6" class="cntrQuadrado">
-                        <input id="checkbox6" type="checkbox" class="checkboxProduto" onclick="checkBox('6')">
-                    </label>
-                    <div class="cntrImg">
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <span id="cntrNomePrecoQuantidade6">
-                        <p id="nomeProduto6" class="nomeProduto">6. X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                        <p id="precoProduto6"  class="precoProduto">R$ 600,00</p>
-                        <div class="cntrQuantidade">
-                            <div class="btnMenos" onclick="cnttlrQuantidade('subitracao', '6')">-</div>
-                            <div class="cntrTxtQuantidade">
-                                <p class="txtQuantidade" id="txtQuantidade6">1</p>
-                            </div>
-                            <div class="btnMais" onclick="cnttlrQuantidade('adicao', '6')">+</div>
-                        </div>
-                    </span>
-                    <span class="cntrExcluirItemCarrinho" id="cntrExcluirItemCarrinho6">
-                        <p>Deseja excluir esse item do carrinho?</p>
-                        <span class="cntrBtnExcluirCarrinho">
-                            <button onclick="cancelarExclusao('6')">Cancelar</button>
-                            <button>
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m353.574 176.526-40.078-1.47-8.689 237.284 40.078 1.464zM235.948 175.791h40.104v237.285h-40.104zM207.186 412.334l-8.689-237.285-40.078 1.471 8.69 237.284z" fill="#ffffff" data-original="#000000" class=""></path><path d="M17.379 76.867v40.104h41.789L92.32 493.706c.909 10.353 9.579 18.294 19.972 18.294h286.74c10.394 0 19.07-7.947 19.972-18.301l33.153-376.728h42.464V76.867H17.379zm363.286 395.029H130.654L99.426 116.971H411.9l-31.235 354.925z" fill="#ffffff" data-original="#000000" class=""></path><path d="M321.504 0H190.496c-18.428 0-33.42 14.992-33.42 33.42v63.499h40.104V40.104h117.64v56.815h40.104V33.42c0-18.428-14.992-33.42-33.42-33.42z" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
-                                Excluir
-                            </button>
-                        </span>
-                    </span>
-                </div>
-
             </div>
         </div>
         
         <div class="cntrRight cntrRightMobile">
 
-            <div class="boxLateral">
+            <div class="boxLateral" id="cntrCriarConta">
+                <div id="boxCriarConta">
+                    <h1>Ainda não tem uma conta na Dropshipping?</h1>
+                    <p>Tá esperando o que??</p>
+                    <button>Entrar ou criar conta</button>
+                </div>
+            </div>
+
+            <div class="boxLateral displayNoneNotAccount">
                <div class="cntrInfosPessoais">
                 <h1>Endereço</h1>
                 <p class="nomeDaPessoa">Veneza Jerusaleno Mesquita</p>
                 <p class="numeroDaPessoa">(+55) 24 99842-8760</p>
-                <p>R Antoun Affif, 15a, Mercearia MGG, Nova Angra (Cunhambebe)</p>
-                <p>Angra dos Reis, Rio de Janeiro, 239333180</p>
+                <p class="enderecoDaPessoa">
+                    R Antoun Affif, 15a, Mercearia MGG, Nova Angra (Cunhambebe)<br><br>Angra dos Reis, Rio de Janeiro, 239333180
+                </p>
 
                </div> 
             </div>
@@ -228,29 +82,27 @@
                     <p id="listaProduto"></p>
 
                     <div class="selecionarTudo">
-                        <input id="checkboxAll1" type="checkbox" class="checkboxAll" onclick="checkBoxAll('0')">
-                        <label for="checkboxAll1">Selecionar os <span id="numItensCarrinho">9</span> itens do carrinho</label>
+                        <input id="checkboxAll1" type="checkbox" class="checkboxAll" onclick="checkBoxAll()">
+                        <label for="checkboxAll1">Selecionar <span id="numItensCarrinho">9 itens</span>  do carrinho</label>
                     </div>
                 </div>
             </div>
                         
                         
-            <div class="boxLateral">
+            <div class="boxLateral displayNoneNotAccount">
                 <div class="cntrCupom">
                     
                     <h1>Cupons aplicáveis</h1>
                     <div class="cntrInputCupom">
-                        <span>
-                            <p>Cupom de primeira compra</p>
-                            <p>- 5%</p>
-                        </span>
+                        <p>Cupom de primeira compra</p>
+                        <p>- 5%</p>
                         <button id="aplicarCupomDesconto" onclick="addCupomDesconto()">Aplicar</button>
                     </div>
 
                 </div>
             </div>
 
-            <div class="boxLateral">
+            <div class="boxLateral displayNoneNotAccount">
                 <div class="cntrFrete">
                     
                     <h1>Dados da entrega</h1>
@@ -294,7 +146,13 @@
                         <p id="totalTetle">Total</p>
                         <p id="totalNumber">R$ 0,00</p>
                     </span>
-                    <button onclick="window.location.href = 'confirmarCompra.html'">Pagar agora</button>
+
+                    <button id="btnAvancar" onclick="avancar()">
+                        <svg id="cadeadoFechado" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 489.4 489.4" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M99 147v51.1h-3.4c-21.4 0-38.8 17.4-38.8 38.8v213.7c0 21.4 17.4 38.8 38.8 38.8h298.2c21.4 0 38.8-17.4 38.8-38.8V236.8c0-21.4-17.4-38.8-38.8-38.8h-1v-51.1C392.8 65.9 326.9 0 245.9 0 164.9.1 99 66 99 147zm168.7 206.2c-3 2.2-3.8 4.3-3.8 7.8.1 15.7.1 31.3.1 47 .3 6.5-3 12.9-8.8 15.8-13.7 7-27.4-2.8-27.4-15.8v-.1c0-15.7 0-31.4.1-47.1 0-3.2-.7-5.3-3.5-7.4-14.2-10.5-18.9-28.4-11.8-44.1 6.9-15.3 23.8-24.3 39.7-21.1 17.7 3.6 30 17.8 30.2 35.5 0 12.3-4.9 22.3-14.8 29.5zM163.3 147c0-45.6 37.1-82.6 82.6-82.6 45.6 0 82.6 37.1 82.6 82.6v51.1H163.3V147z" fill="#000000" data-original="#000000" class=""></path></g></svg>
+                        <svg id="cadeadoAberto" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M375.721 227.259c-5.331-5.331-11.8-7.992-19.417-7.992H146.176v-91.36c0-20.179 7.139-37.402 21.415-51.678 14.277-14.273 31.501-21.411 51.678-21.411 20.175 0 37.402 7.137 51.673 21.411 14.277 14.276 21.416 31.5 21.416 51.678 0 4.947 1.807 9.229 5.42 12.845 3.621 3.617 7.905 5.426 12.847 5.426h18.281c4.945 0 9.227-1.809 12.848-5.426 3.606-3.616 5.42-7.898 5.42-12.845 0-35.216-12.515-65.331-37.541-90.362C284.603 12.513 254.48 0 219.269 0c-35.214 0-65.334 12.513-90.366 37.544-25.028 25.028-37.542 55.146-37.542 90.362v91.36h-9.135c-7.611 0-14.084 2.667-19.414 7.992-5.33 5.325-7.994 11.8-7.994 19.414v164.452c0 7.617 2.665 14.089 7.994 19.417 5.33 5.325 11.803 7.991 19.414 7.991h274.078c7.617 0 14.092-2.666 19.417-7.991 5.325-5.328 7.994-11.8 7.994-19.417V246.673c.004-7.614-2.662-14.082-7.994-19.414z" fill="#000000" data-original="#000000" class=""></path></g></svg>
+                        Avançar
+                    </button>
+
                     <button id="btnCancelarMobile">Cancelar</button>
                 </div>
             </div>
@@ -317,7 +175,7 @@
             </div>
             <div class="containerPrecoMobile">
                 <span class="ctnrSelecionarTudo">
-                    <input id="checkboxAll2" type="checkbox" class="checkboxAll" onclick="checkBoxAll('1')">
+                    <input id="checkboxAll2" type="checkbox" class="checkboxAll" onclick="checkBoxAll()">
                     <label for="checkboxAll2">Selecionar tudo</label>
                 </span>
                 <span>
@@ -337,17 +195,137 @@
     </footer>
 
 
-
     <script>
+// verificar se eu estou logado
+
+// cria uma locationStorage com o texto 'deslogado' e muda ela dps que vc criar a conta
+// se for == a 'logado' aparece as infos, se não, aparece o box criar conta
+// quando vc entra pela primeira vez, vai verificar o locationStorage e se for vazio, coloca 'deslogado'
+
+//checkboxAll, quando eu clicar nele, vai selecionar todos os checkBox e vai add todos os valores no array
+//quando eu selecionar todos, ele vai ser ativado tbm
+// guarde o numero de checkbox q tem na em tela, quando clicar no CB-All cria um for q chama "checkBox()" o numero de vezes igual a variavel de quantidade
+        
+
+        
+        
+
+        // verificar se se está logado ou não
+        if (localStorage.getItem("sttsLogin") != "deslogado") {
+            // mostrar box login
+            document.getElementById("cntrCriarConta").style.display = "block"
+
+            // cria uma class de itens q não aparecem se estiver deslogado
+
+            for (let i = 0; i < document.querySelectorAll(".displayNoneNotAccount").length; i++) {
+                document.querySelectorAll(".displayNoneNotAccount")[i].style.display = "none"   
+            }
+        }
+        else{
+            //mostrar dados
+            document.getElementById("cntrCriarConta").style.display = "none"
+
+            for (let i = 0; i < document.querySelectorAll(".displayNoneNotAccount").length; i++) {
+                document.querySelectorAll(".displayNoneNotAccount")[i].style.display = "block"   
+            }
+
+        }
+
+        let indice2 = localStorage.getItem("idKeyAddCard")
+        let splittedString2 = indice2.split(/,(?! )/)
+        if(splittedString2.indexOf("") != -1){
+            splittedString2.splice(splittedString2.indexOf(""), 1)
+        }
+
+        let quantidadeCheckBox = splittedString2.length
+
+        function checkBoxAll(){
+
+
+            // limpar lista de preços
+            listaDePrecosSelecionados = []
+
+
+            if (document.getElementById("checkboxAll1").checked == true) {
+                        
+                // limpar selecionados
+                for (let i = 0; i < quantidadeCheckBox; i++) {
+                    document.getElementById("checkbox" + (i+1)).checked = true; 
+                    checkBox(i+1);
+                }
+
+            }
+            else if (document.getElementById("checkboxAll1").checked == false) {
+
+                for (let i = 0; i < quantidadeCheckBox; i++) {
+                    document.getElementById("checkbox" + (i+1)).checked = false;
+
+                    console.log(document.getElementById("checkbox" + (i+1)).checked);
+
+                }
+            }
+
+            console.log("listaDePrecosSelecionados: " + listaDePrecosSelecionados);
+
+        }
+
+
+        let listaDePrecosSelecionados = []
+        let contagemChecked = 0
 
         function checkBox(indiceKey){
+            desbloquearBtnAvancar()
+
             // capturar a quantidade do item selecionado
             let quantidade_itemSelecionado = parseInt(document.getElementById("txtQuantidade" + indiceKey).innerHTML)
             
             // capturar o preco do item selecionado
-            let preco_itemSelecionado = parseFloat(document.getElementById("precoProduto" + indiceKey).innerHTML.replace("R$ ", "").replace(",", ".")).toFixed(2) 
+            let preco_UnidadeItemSelecionado = (parseFloat(document.getElementById("precoProduto" + indiceKey).innerHTML.replace("R$ ", "").replace(",", ".")) / quantidade_itemSelecionado).toFixed(2) 
+           
+            // capturar o preco do item selecionado
+            let preco_itemSelecionado = (preco_UnidadeItemSelecionado * quantidade_itemSelecionado).toFixed(2) 
+            
+            // add preço do item selecionado em uma lista 
 
+            if (document.getElementById("checkbox" + indiceKey).checked) {
+
+                if (listaDePrecosSelecionados.indexOf(preco_itemSelecionado) == -1) {
+                    listaDePrecosSelecionados.push(preco_itemSelecionado)
+                    console.log(listaDePrecosSelecionados);
+                    contagemChecked++
+                }
+
+
+                somaValorTotal()
+
+            }else{
+                // Capturar o preco e excluir ele da lista
+
+                if (listaDePrecosSelecionados.indexOf(preco_itemSelecionado) != -1) {
+                    var index = listaDePrecosSelecionados.indexOf(preco_itemSelecionado);
+
+                    if (index > -1) {
+                        listaDePrecosSelecionados.splice(index, 1);
+                        contagemChecked--
+                        document.getElementById("checkboxAll1").checked = false
+
+                    }
+
+                    console.log(listaDePrecosSelecionados);
+                    somaValorTotal()
+                }
+            }
+
+            // se todos os checkBox forem selecionados
+            if (contagemChecked >= quantidadeCheckBox) {
+                document.getElementById("checkboxAll1").checked = true
+                //checkBoxAll()
+            }else{
+                document.getElementById("checkboxAll1").checked = false
+            }
+            attCupomDesconto()
         }
+        let preco_itemSelecionadoOld = ""
 
         function cnttlrQuantidade(operacao, id) {
             let txtQuantidade = document.getElementById("txtQuantidade" + id)
@@ -355,12 +333,14 @@
             let cntrExcluirItemCarrinho = document.getElementById("cntrExcluirItemCarrinho" + id)
             let cntrNomePrecoQuantidade = document.getElementById("cntrNomePrecoQuantidade" + id)
             let preco_itemSelecionado = document.getElementById("precoProduto" + id)
+            preco_itemSelecionadoOld = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", ".")).toFixed(2)
 
             
             if (operacao == "adicao") {
                 let preco = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", "."))/numbQuantidade
                 numbQuantidade++
                 // dobrar o preco do produto
+
                 preco_itemSelecionado.innerHTML = parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", ".")) + preco
                 preco_itemSelecionado.innerHTML = "R$ " + parseFloat(preco_itemSelecionado.innerHTML).toFixed(2).replace(".", ",")
             }
@@ -378,6 +358,43 @@
                 }
             }
             txtQuantidade.innerHTML = numbQuantidade
+            attListaPreco(parseFloat(preco_itemSelecionado.innerHTML.replace("R$ ", "").replace(",", ".")).toFixed(2))
+
+            attCupomDesconto()
+        }
+
+        function somaValorTotal() {
+
+            let soma = 0;
+            for(var i = 0; i < listaDePrecosSelecionados.length; i++) {
+                soma += parseFloat(listaDePrecosSelecionados[i]);
+            }
+            console.log(parseFloat(soma));
+            console.log(listaDePrecosSelecionados);
+            
+            document.getElementById("itensSelecionadosPreco").innerHTML = "R$ " + parseFloat(soma).toFixed(2).replace(".", ",")
+            document.getElementById("totalNumber").innerHTML = document.getElementById("itensSelecionadosPreco").innerHTML
+            desbloquearBtnAvancar()
+
+        }
+
+
+        function attListaPreco(newValue) {
+            // ve na lista de precos se ao valor anterior esta lá
+
+            if (listaDePrecosSelecionados.indexOf(preco_itemSelecionadoOld) != -1) {
+                var index = listaDePrecosSelecionados.indexOf(preco_itemSelecionadoOld);
+
+                if (index > -1) {
+                    listaDePrecosSelecionados.splice(index, 1);
+                    listaDePrecosSelecionados.push(newValue);
+                    somaValorTotal()
+                }
+
+            }else{
+                console.log(preco_itemSelecionadoOld + " não esta na lista " + listaDePrecosSelecionados);
+            }
+
         }
 
         function cancelarExclusao(id){
@@ -387,8 +404,72 @@
             cntrNomePrecoQuantidade.style.display = "block"
         }
 
+        let valorCupom = 0;
+
+        function addCupomDesconto() {
+            if (valorCupom == 0) {
+                valorCupom = 5;
+                attCupomDesconto()
+            }
+
+            let btnAplicar = document.getElementById("aplicarCupomDesconto")
+            btnAplicar.style.backgroundColor = "green"
+            btnAplicar.innerHTML = "Aplicado!"
+            btnAplicar.style.animationPlayState = "running"
+        }
+
+
+        function attCupomDesconto(){
+            // cupom é = preco menos 5%
+            let precoTotal = parseFloat(document.getElementById("totalNumber").innerHTML.replace("R$ ", "").replace(",", ".")).toFixed(2)
+
+            document.getElementById("cupomDesconto_txt").innerHTML = "- R$ " + (precoTotal * (valorCupom/100)).toFixed(2).replace(".", ",")
+
+            document.getElementById("totalNumber").innerHTML = "R$ " + (precoTotal - (precoTotal * (valorCupom/100))).toFixed(2).replace(".", ",")
+            desbloquearBtnAvancar()
+        }
+        let bntAvancar = document.getElementById("btnAvancar")
+        bntAvancar.disabled = true;
+        bntAvancar.style.cursor = "auto";
+
+        function desbloquearBtnAvancar(){
+                
+            // Desbloqueia o botão de pegar só se o Valor total for diferente de 0
+            // Se for diferente, muda o svg e fé
+            let svgCadAberto = document.getElementById("cadeadoAberto")
+            let svgCadFechado = document.getElementById("cadeadoFechado")
+
+
+            if (localStorage.getItem("sttsLogin") == "deslogado" && document.getElementById("totalNumber").innerHTML != "R$ 0,00") {
+
+                svgCadFechado.style.display = "none"
+                svgCadAberto.style.display = "block"
+                bntAvancar.disabled = false;
+                bntAvancar.style.cursor = "pointer";
+                bntAvancar.style.animation = "colorBtnAvancarAtivo .8s both"
+                bntAvancar.style.animationPlayState = "running"
+
+            }else{
+
+                svgCadFechado.style.display = "block"
+                svgCadAberto.style.display = "none"
+                bntAvancar.disabled = true;
+                bntAvancar.style.cursor = "auto";
+                bntAvancar.style.animation = "colorBtnAvancarInativo .8s both"
+                bntAvancar.style.animationPlayState = "running"
+
+            }
+        }
+
+        function avancar(){
+            bntAvancar.style.animation = "colorBtnAvancarClick .8s both"
+            bntAvancar.style.animationPlayState = "running"
+        }
+
 
     </script>
+    <script src="carrinho.js"></script>
+    <script src="infosPessoais.js"></script>
 
 </body>
 </html>
