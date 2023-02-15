@@ -61,9 +61,41 @@ header{
 
 }
 
-.bntBuyUp{
-    margin: 10px; 
+
+.cntrIconsHeader{
+    display: flex;
 }
+.cntrIconsHeader div{
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.cntrIconsHeader div:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.cntrIconsHeader div:hover svg{
+    transform: scale(1.08);
+}
+.cntrCar{
+    margin-left: 20px;
+}
+.cntrIconsHeader svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+#cntrCoracaoRed{
+    display: none;
+}
+.cntrIconsHeader p{
+    font-size: .8em;
+    margin-top: 10px;
+}
+
 main{
     display: flex;
     width: var(---maxWidth);
