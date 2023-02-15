@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="htmlwidth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body id="body">
     <div class="shadow">
         <div id="cntrMensagemLogin" class="cntrMensagemLogin">
             <span>
@@ -64,14 +64,15 @@
 
 
     </div>
-    <header>
+    <header id="header">
+
         <div class="superiorHeader">
             <div class="containerLogo">
                 <!--Logo-->
                 <h1 id="nome" class="nomeLoja cursorPointer">Dropshipping </h1>
             </div>
 
-            <div class="containerPesquisa containerPesquisaDesktop">
+            <div class="containerPesquisaDesktop" id="containerPesquisaDesktop">
                 <input type="text" name="pesquisa" class="inputPesquisa" id="pesquisa" placeholder="O que está procurando?">
                 <div class="containerIconPesquisa containerIconPesquisaDesktop cursorPointer">
                     <!--svg Lupa-->
@@ -79,10 +80,14 @@
                 </div>
             </div>
 
+            <div class="cntrXFav" onclick="abaFavoritos()" id="x">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 329.269 329" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0" fill="#ffffff" data-original="#000000" class=""></path></g></svg>
+            </div>
+
             <div class="containerIcons">
 
                 <!--svg Coração-->
-                <svg  onclick="fav()" class="cursorPointer iconForDesck" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                <svg  onclick="abaFavoritos()" class="cursorPointer iconForDesck" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
                 <!--svg Carrinho-->
                 <svg onclick="window.location.href = 'carrinho.html'" class="cursorPointer iconForDesck" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="m2 3h3.208l3.535 15.026a2.992 2.992 0 0 0 .257 5.974h17a1 1 0 0 0 0-2h-17a1 1 0 0 1 0-2h16.882a2.99 2.99 0 0 0 2.92-2.313l2.119-9a3 3 0 0 0 -2.921-3.687h-20.267l-.759-3.229a1 1 0 0 0 -.974-.771h-4a1 1 0 0 0 0 2zm26 4a1.016 1.016 0 0 1 .974 1.229l-2.12 9a.994.994 0 0 1 -.972.771h-15.09l-2.592-11z" data-original="#000000" class="hovered-path"></path><path d="m20 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path><path d="m9 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path></g></svg>
 
@@ -90,10 +95,28 @@
                 <svg onclick="window.location.href = 'login.html'" class="cursorPointer iconForDesck" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 682.66669 682.66669" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><defs id="defs358"><clipPath clipPathUnits="userSpaceOnUse" id="clipPath368"><path d="M 0,512 H 512 V 0 H 0 Z" id="path366" fill="#ffffff" data-original="#000000" class=""></path></clipPath></defs><g id="g360" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"><g id="g362"><g id="g364" clip-path="url(#clipPath368)"><g id="g370" transform="translate(497,256)"><path d="m 0,0 c 0,-133.101 -107.9,-241 -241,-241 -133.103,0 -241,107.899 -241,241 0,133.103 107.897,241 241,241 C -107.9,241 0,133.103 0,0 Z" style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path372" fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path></g><g id="g374" transform="translate(352.4004,288.1338)"><path d="m 0,0 c 0,-53.24 -43.158,-96.4 -96.4,-96.4 -53.244,0 -96.401,43.16 -96.401,96.4 0,53.239 43.157,96.399 96.401,96.399 C -43.158,96.399 0,53.239 0,0 Z" style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path376" fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path></g><g id="g378" transform="translate(112.2129,62.5752)"><path d="m 0,0 c 7.71,72.602 69.142,129.158 143.787,129.158 74.647,0 136.078,-56.56 143.785,-129.16" style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path380" fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class=""></path></g></g></g></g></g></svg>
                 
                 <!--svg Menu-->
-                <svg onclick="menu()" class="cursorPointer menu" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><symbol id="material_x5F_system_x5F_icon_x5F_border" viewBox="0 -48 48 48"></symbol><symbol id="material_x5F_system_x5F_icon_x5F_grid" viewBox="-.0002 -48 48.0002 48.0002"><g><g clip-path="url(#SVGID_2_)"><g></g><g></g><g><path d="m47.75-.25v-47.5h-47.5v47.5zm.25.25h-48v-48h48z" fill="#ffffff" data-original="#000000" class=""></path></g></g></g></symbol><clipPath id="SVGID_2_"><path id="SVGID_1_" d="m0-48h48v48h-48z" fill="#ffffff" data-original="#000000" class=""></path></clipPath><symbol id="material_x5F_system_x5F_icon_x5F_keylines" viewBox="-.0002 -48.0001 48.0002 48.0001"><g opacity=".4"><g clip-path="url(#SVGID_4_)"><path d="m47.75-.25v-47.5h-47.5v47.5zm.25.25h-48v-48h48z" fill="#ffffff" data-original="#000000" class=""></path></g></g></symbol><clipPath id="SVGID_4_"><path id="SVGID_3_" d="m0-48h48v48h-48z" fill="#ffffff" data-original="#000000" class=""></path></clipPath><g id="Backup" display="none"><g display="inline"><path d="m4 12.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c0 .5524-.4477 1.0002-1 1.0002l-14 .0007c-.5522.0001-1-.4476-1-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g><g display="inline"><path d="m4 7.0005v-.0001c-.0001-.5523.4476-1 .9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c0 .5524-.4477 1.0002-1 1.0002l-14 .0007c-.5522.0001-1-.4476-1-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g><g display="inline"><path d="m4 17.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c0 .5524-.4477 1.0002-1 1.0002l-14 .0007c-.5522.0001-1-.4476-1-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g></g><g id="Grid" display="none" transform="scale(.5 -.5)"><use id="XMLID_56_" display="inline" height="48" opacity=".15" width="48" xlink:href="#material_x5F_system_x5F_icon_x5F_grid" y="-48"></use><use id="XMLID_55_" display="inline" height="48" width="48" xlink:href="#material_x5F_system_x5F_icon_x5F_border" y="-48"></use></g><g id="Keyline" display="none"><use id="XMLID_20_" display="inline" height="48" transform="scale(.5 -.5)" width="48" xlink:href="#material_x5F_system_x5F_icon_x5F_keylines" y="-48"></use></g><g id="Outline" display="none"><g display="inline"><g><path d="m4 12.0005c-.0001-.5523.4477-1.0001 1-1.0002l13.9999-.0008c.5523 0 1.0001.4477 1.0001 1 .0001.5523-.4477 1.0001-1 1.0002l-13.9999.0007c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g><g><path d="m4 7.0005c-.0001-.5524.4477-1.0002 1-1.0002l13.9999-.0008c.5523 0 1.0001.4477 1.0001 1 .0001.5523-.4477 1.0001-1 1.0002l-13.9999.0007c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g><g><path d="m4 17.0005c-.0001-.5523.4477-1.0001 1-1.0002l13.9999-.0008c.5523 0 1.0001.4477 1.0001 1 .0001.5523-.4477 1.0001-1 1.0002l-13.9999.0007c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g></g></g><g id="Filled"><g><path d="m4 12.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path><path d="m4 7.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path><path d="m4 17.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path></g></g><g id="Two_Tone" display="none"><g display="inline"><path d="m4 12.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#ffffff" data-original="#000000" class=""></path><g><path d="m4 7.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#00d6a2" data-original="#00d6a2" class=""></path></g><g><path d="m4 17.0005v-.0001c-.0001-.5523.4476-1.0001.9999-1.0001l14-.0008c.5523 0 1 .4476 1.0001.9999v.0001c.0001.5523-.4476 1.0001-.9999 1.0001l-14 .0008c-.5523.0001-1-.4476-1.0001-.9999z" fill="#00d6a2" data-original="#00d6a2" class=""></path></g></g></g></g></svg>
+
+                <div onclick="menu()" class="cursorPointer cntrNewMenu">
+                    <span>
+                        <div id="parte1DoX" class="newIconMenu"></div>
+                        <div id="parte2DoX" class="newIconMenu"></div>
+                        <div id="parte3DoX" class="newIconMenu"></div>
+                    </span>
+                </div>
 
             </div>
         </div>
+
+
+
+        <div class="containerPesquisaMobile" id="containerPesquisaMobile">
+            <input type="text" name="pesquisa" class="inputPesquisa" id="pesquisa2" placeholder="O que está procurando?">
+            <div class="containerIconPesquisa">
+                <!--svg Lupa-->
+                <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path id="XMLID_41_" d="m27.707 26.293-5.969-5.969c1.412-1.724 2.262-3.926 2.262-6.324 0-5.514-4.486-10-10-10s-10 4.486-10 10 4.486 10 10 10c2.398 0 4.6-.85 6.324-2.262l5.969 5.969c.391.391 1.023.391 1.414 0s.391-1.023 0-1.414zm-21.707-12.293c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8-8-3.589-8-8z" data-original="#000000" class=""></path></g></svg>
+            </div>
+        </div>
+
 
         <div class="containerIconsMenu" id="containerIconsMenu">
             
@@ -103,7 +126,7 @@
                 <p>Carrinho</p>
             </span>
 
-            <span class="cursorPointer" onclick="fav()">
+            <span class="cursorPointer" onclick="abaFavoritos()">
                 <!--svg Coração-->
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="hovered-paths"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
                 <p>Favoritos</p>
@@ -116,110 +139,19 @@
             </span>
         </div>
 
-        <div class="containerPesquisa containerPesquisaMobile">
-            <input type="text" name="pesquisa" class="inputPesquisa" id="pesquisa2" placeholder="O que está procurando?">
-            <div class="containerIconPesquisa">
-                <!--svg Lupa-->
-                <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path id="XMLID_41_" d="m27.707 26.293-5.969-5.969c1.412-1.724 2.262-3.926 2.262-6.324 0-5.514-4.486-10-10-10s-10 4.486-10 10 4.486 10 10 10c2.398 0 4.6-.85 6.324-2.262l5.969 5.969c.391.391 1.023.391 1.414 0s.391-1.023 0-1.414zm-21.707-12.293c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8-8-3.589-8-8z" data-original="#000000" class=""></path></g></svg>
-            </div>
-        </div>
     </header>
 
-    <div id="favoritos" class="favoritos gradeProdutos">
-        <h1 class="h1Favoritos">Favoritos</h1>
-        <div class="containerFavoritos">
-        
-            <div class="blocoProduto" onclick="produtoSelecionado('1')">
-                <div class="containerImgProduto">
-                    <div class="cntrBtnFavorito">
-                        <!--svg coração-->
-                        <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                    </div>
-                    <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                </div>
-                <div class="containerNomeProduto">
-                    <p class="nomeProduto">1. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                </div>
-                <div class="containerTags">
-                    <div class="cntrFreteGratis">
-                        <p>Frete grátis</p>
-                    </div>
-                </div>
-                <div class="containerPrecoNumeroVendas">
-                    <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                    <p class="numeroVendas">9,5 mil vendidos</p>
+    <div id="favoritos" class="favoritos">
+        <div class="shadow2">
+            <div onclick="abaFavoritos()" class="areaClicavel"></div>
+            <div class="boxFavoritos">
+                <div class="cntrItensFavo">
+                    
+                    
                 </div>
             </div>
-
-            <div class="blocoProduto" onclick="produtoSelecionado('2')">
-                <div class="containerImgProduto">
-                    <div class="cntrBtnFavorito">
-                        <!--svg coração-->
-                        <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                    </div>
-                    <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                </div>
-                <div class="containerNomeProduto">
-                    <p class="nomeProduto">2. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                </div>
-                <div class="containerTags">
-                    <div class="cntrFreteGratis">
-                        <p>Frete grátis</p>
-                    </div>
-                </div>
-                <div class="containerPrecoNumeroVendas">
-                    <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                    <p class="numeroVendas">9,5 mil vendidos</p>
-                </div>
-            </div>
-
-            <div class="blocoProduto" onclick="produtoSelecionado('3')">
-                <div class="containerImgProduto">
-                    <div class="cntrBtnFavorito">
-                        <!--svg coração-->
-                        <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                    </div>
-                    <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                </div>
-                <div class="containerNomeProduto">
-                    <p class="nomeProduto">3. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                </div>
-                <div class="containerTags">
-                    <div class="cntrFreteGratis">
-                        <p>Frete grátis</p>
-                    </div>
-                </div>
-                <div class="containerPrecoNumeroVendas">
-                    <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                    <p class="numeroVendas">9,5 mil vendidos</p>
-                </div>
-            </div>
-
-            <div class="blocoProduto" onclick="produtoSelecionado('4')">
-                <div class="containerImgProduto">
-                    <div class="cntrBtnFavorito">
-                        <!--svg coração-->
-                        <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                    </div>
-                    <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                </div>
-                <div class="containerNomeProduto">
-                    <p class="nomeProduto">4. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                </div>
-                <div class="containerTags">
-                    <div class="cntrFreteGratis">
-                        <p>Frete grátis</p>
-                    </div>
-                </div>
-                <div class="containerPrecoNumeroVendas">
-                    <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                    <p class="numeroVendas">9,5 mil vendidos</p>
-                </div>
-            </div>
-
         </div>
     </div>
-
 
     <main>
         <div class="containerBanner">
@@ -240,97 +172,157 @@
             </div>
         </div>
 
+        <div class="cntrItemEmDestaque">
+            <div class="cntrOfertaQuente cntrOfertaQuenteMobile">
+                <p>🔥 Oferta quente 🔥</p>
+            </div>
+            <h1 class="h1ProdutosMainFeed maisVendidos">Mais vendido 🔥🔥🔥</h1>
+            <div class="cntrProdutoEmDestaque">
+
+                <p class="nomeProdutoDestaqueMobile nomeProdutoDestaque">Kit 2x Whey Protein + 2x Bcaa + 2x Creatina + Coqueteleira</p>
+
+                <span class="cntrImgAndInfoProdutoDestaque">
+                    <div class="cntrImgProdutoDestaque">
+                        <img src="imagens/whey.png" alt="">
+                    </div>
+                    <div class="cntrInfosProdutoDestaque">
+                        <div>
+                            <div class="cntrOfertaQuente cntrOfertaQuenteDesktop">
+                                <p>🔥 Oferta quente 🔥</p>
+                            </div>
+                            <p class="nomeProdutoDestaqueDesktop nomeProdutoDestaque">Kit 2x Whey Protein + 2x Bcaa + 2x Creatina + Coqueteleira</p>
+                            <p class="precoAntigoProdutoDestaque">R$ 321,12</p>
+                            <span>
+                                <p class="precoProdutoDestaque">R$ 321,12</p>
+                                <p class="descontoProdutoDestaque">R$ <span>20,19</span> de desconto</p>
+                            </span>
+                            <p class="parcelasProdutoDestaque">ou em até <span>12x 18,52 reais</span> sem juros</p>
+                            <p class="descricaoProdutoDestaque">Aumento da massa magra, ganho de forca, alto índice de eficiência proteica, acelera a recuperação muscular, manutenção muscular, aumento de energia, ressíntese das fontes energéticas (ATP)</p>
+                        </div>
+                        <div class="cntrBtnVerDetalhes"><button onclick="produtoSelecionado('1')" >Ver detalhes</button></div>
+                    </div>
+                </span>
+
+            </div>
+        </div>
+
+
+
         <div class="cntrGradeProdutosFeed gradeProdutos">
             <h1 class="h1ProdutosMainFeed">Todos os produtos</h1>
             <div class="cntrGradeProdutos">
             
-                <div class="blocoProduto" onclick="produtoSelecionado('1')">
-                    <div class="containerImgProduto">
-                        <div class="cntrBtnFavorito">
-                            <!--svg coração-->
-                            <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                        </div>
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                <div class="blocoProduto">
+                    
+                    <div class="cntrBtnFavorito">
+                        <!--svg coração-->
+                        <svg onclick="coracao('branco', '1')" id="coracaoWhite1" class="coracaoBranco coracaoBrancoItens" class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                        <svg onclick="coracao('vermelho', '1')" id="coracaoRed1" class="coracaoVermelho coracaoVermelhoItens" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0" fill="#d93737" data-original="#000000" class=""></path></g></svg>
                     </div>
-                    <div class="containerNomeProduto">
-                        <p class="nomeProduto">1. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                    </div>
-                    <div class="containerTags">
-                        <div class="cntrFreteGratis">
-                            <p>Frete grátis</p>
-                        </div>
-                    </div>
-                    <div class="containerPrecoNumeroVendas">
-                        <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                        <p class="numeroVendas">9,5 mil vendidos</p>
-                    </div>
-                </div>
-    
-                <div class="blocoProduto" onclick="produtoSelecionado('2')">
-                    <div class="containerImgProduto">
-                        <div class="cntrBtnFavorito">
-                            <!--svg coração-->
-                            <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                        </div>
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <div class="containerNomeProduto">
-                        <p class="nomeProduto">2. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                    </div>
-                    <div class="containerTags">
-                        <div class="cntrFreteGratis">
-                            <p>Frete grátis</p>
-                        </div>
-                    </div>
-                    <div class="containerPrecoNumeroVendas">
-                        <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                        <p class="numeroVendas">9,5 mil vendidos</p>
-                    </div>
-                </div>
-    
-                <div class="blocoProduto" onclick="produtoSelecionado('3')">
-                    <div class="containerImgProduto">
-                        <div class="cntrBtnFavorito">
-                            <!--svg coração-->
-                            <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
-                        </div>
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <div class="containerNomeProduto">
-                        <p class="nomeProduto">3. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                    </div>
-                    <div class="containerTags">
-                        <div class="cntrFreteGratis">
-                            <p>Frete grátis</p>
-                        </div>
-                    </div>
-                    <div class="containerPrecoNumeroVendas">
-                        <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                        <p class="numeroVendas">9,5 mil vendidos</p>
-                    </div>
-                </div>
-    
-                <div class="blocoProduto" onclick="produtoSelecionado('4')">
 
-                    <div class="containerImgProduto">
-                        <div class="cntrBtnFavorito">
-                            <!--svg coração-->
-                            <svg class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                    <span class="areaClicavel" onclick="produtoSelecionado('2')">
+    
+                        <div class="containerImgProduto">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
                         </div>
-                        <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
-                    </div>
-                    <div class="containerNomeProduto">
-                        <p class="nomeProduto">4. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
-                    </div>
-                    <div class="containerTags">
-                        <div class="cntrFreteGratis">
-                            <p>Frete grátis</p>
+                        <div class="containerNomeProduto">
+                            <p class="nomeProduto">1. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
                         </div>
+                        <div class="containerTags">
+                            <div class="cntrFreteGratis">
+                                <p>Frete grátis</p>
+                            </div>
+                        </div>
+                        <div class="containerPrecoNumeroVendas">
+                            <p class="rs">R$<span class="precoProtuto">123,67</span></p>
+                            <p class="numeroVendas">9,5 mil vendidos</p>
+                        </div>
+                    </span>
+
+                </div>
+    
+                <div class="blocoProduto">
+                                        
+                    <div class="cntrBtnFavorito">
+                        <!--svg coração-->
+                        <svg onclick="coracao('branco', '2')" id="coracaoWhite2" class="coracaoBranco coracaoBrancoItens" class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                        <svg onclick="coracao('vermelho', '2')" id="coracaoRed2" class="coracaoVermelho coracaoVermelhoItens" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0" fill="#d93737" data-original="#000000" class=""></path></g></svg>
                     </div>
-                    <div class="containerPrecoNumeroVendas">
-                        <p class="rs">R$<span class="precoProtuto">123,67</span></p>
-                        <p class="numeroVendas">9,5 mil vendidos</p>
+
+
+                    <span class="areaClicavel" onclick="produtoSelecionado('3')">
+                        <div class="containerImgProduto">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                        </div>
+                        <div class="containerNomeProduto">
+                            <p class="nomeProduto">2. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        </div>
+                        <div class="containerTags">
+                            <div class="cntrFreteGratis">
+                                <p>Frete grátis</p>
+                            </div>
+                        </div>
+                        <div class="containerPrecoNumeroVendas">
+                            <p class="rs">R$<span class="precoProtuto">123,67</span></p>
+                            <p class="numeroVendas">9,5 mil vendidos</p>
+                        </div>
+                    </span>
+                </div>
+    
+                <div class="blocoProduto">
+                                        
+                    <div class="cntrBtnFavorito">
+                        <!--svg coração-->
+                        <svg onclick="coracao('branco', '3')" id="coracaoWhite3" class="coracaoBranco coracaoBrancoItens" class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                        <svg onclick="coracao('vermelho', '3')" id="coracaoRed3" class="coracaoVermelho coracaoVermelhoItens" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0" fill="#d93737" data-original="#000000" class=""></path></g></svg>
                     </div>
+
+
+                    <span class="areaClicavel"  onclick="produtoSelecionado('4')">
+                        <div class="containerImgProduto">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                        </div>
+                        <div class="containerNomeProduto">
+                            <p class="nomeProduto">3. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        </div>
+                        <div class="containerTags">
+                            <div class="cntrFreteGratis">
+                                <p>Frete grátis</p>
+                            </div>
+                        </div>
+                        <div class="containerPrecoNumeroVendas">
+                            <p class="rs">R$<span class="precoProtuto">123,67</span></p>
+                            <p class="numeroVendas">9,5 mil vendidos</p>
+                        </div>
+                    </span>
+                </div>
+    
+                <div class="blocoProduto">
+                    
+                    <div class="cntrBtnFavorito">
+                        <!--svg coração-->
+                        <svg onclick="coracao('branco', '4')" id="coracaoWhite4" class="coracaoBranco coracaoBrancoItens" class="cursorPointer" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0" data-original="#000000" class="hovered-path"></path></g></svg>
+                        <svg onclick="coracao('vermelho', '4')" id="coracaoRed4" class="coracaoVermelho coracaoVermelhoItens" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0" fill="#d93737" data-original="#000000" class=""></path></g></svg>
+                    </div>
+
+
+                    <span class="areaClicavel" onclick="produtoSelecionado('5')">
+                        <div class="containerImgProduto">
+                            <img src="https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp" alt="">
+                        </div>
+                        <div class="containerNomeProduto">
+                            <p class="nomeProduto">4. Notebook X515ja-ej1792w 256 Gb 8 Gb Ram Core I5 Cinza Asus</p>
+                        </div>
+                        <div class="containerTags">
+                            <div class="cntrFreteGratis">
+                                <p>Frete grátis</p>
+                            </div>
+                        </div>
+                        <div class="containerPrecoNumeroVendas">
+                            <p class="rs">R$<span class="precoProtuto">123,67</span></p>
+                            <p class="numeroVendas">9,5 mil vendidos</p>
+                        </div>
+                    </span>
                 </div>
     
             </div>
@@ -361,7 +353,7 @@
         </div>
 
         <div class="containerAnuncio">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_727918-MLA53270802190_012023-OO.webp" alt="">
+            <a href="https://www.disneyplus.com/pt-br/login" target="_blank" rel="noopener noreferrer"><img src="https://http2.mlstatic.com/D_NQ_NP_727918-MLA53270802190_012023-OO.webp" alt=""></a>
         </div>
 
         <div class="containerCnpj">
@@ -370,35 +362,282 @@
         </div>
     </footer>
 
+
     <script>
+
+    let header = document.getElementById("header")
+    let favoritos = document.getElementById("favoritos")
+    let containerMenu = document.getElementById("containerIconsMenu")
+    let containerPesquisaMobile = document.getElementById("containerPesquisaMobile")
+    let containerPesquisaDesktop = document.getElementById("containerPesquisaDesktop")
+    
+    let cortado1_3 = false;
+    let cortado1_2 = false;
+    const descricaoCompleta = document.querySelector(".descricaoProdutoDestaque").innerHTML;
+
+    // verificar se esta no modo mobile ou desck
+    start();
+    window.addEventListener('resize', start);
+
+
+    function start(){
+
+        let descricao = document.querySelector(".descricaoProdutoDestaque")
+
+        if (document.getElementById("htmlwidth").clientWidth <= 873){
+            //Aqui vamos cortar 1/3 a descrição do produto em destaque
+
+            if (cortado1_3 == false) {
+                descricao.innerHTML = descricao.innerHTML.slice(0, (descricao.innerHTML.length/4)*2) + "..."
+                cortado1_3 = true
+            }
+        }
+        
+        if (document.getElementById("htmlwidth").clientWidth > 873){
+            document.querySelector(".descricaoProdutoDestaque").innerHTML = descricaoCompleta
+            cortado1_3 = false
+        }
+
+/*
+        if (document.getElementById("htmlwidth").clientWidth <= 800){
+            //Aqui vamos cortar 1/2 a descrição do produto em destaque
+
+            if (cortado1_2 != false) {
+                descricao.style.color = "blue"
+
+            }else{
+                
+                descricao.innerHTML = descricao.innerHTML.slice(0, (descricao.innerHTML.length/2)) + "..."
+                descricao.style.color = "green"
+                cortado1_2 = true
+            }
+        }
+
+        if (document.getElementById("htmlwidth").clientWidth > 800){
+            descricao.innerHTML = descricaoCompleta.innerHTML
+        }
+*/
+
+
+        console.log(document.getElementById("htmlwidth").clientWidth);
+
+        if (document.getElementById("htmlwidth").clientWidth > 680){
+            document.querySelector(".cntrNewMenu").style.display = 'none'
+            
+            for (let i = 0; i < document.querySelectorAll(".iconForDesck").length; i++) {
+                document.querySelectorAll(".iconForDesck")[i].style.display = 'block'
+            }
+            
+            containerMenu.style.animation = "menuAnimationClose .5s both"
+
+            
+
+            setTimeout(function(){ 
+                containerMenu.style.display = 'none' 
+            }, 500);
+        }
+        else {
+            document.querySelector(".cntrNewMenu").style.display = 'block'
+            
+            for (let i = 0; i < document.querySelectorAll(".iconForDesck").length; i++) {
+                document.querySelectorAll(".iconForDesck")[i].style.display = 'none'
+            }
+
+        }
+
+        // se aba fav estiver visivel, nd daqui sera visivel tbm
+        // cria uma loop, enquanto Fav for visivel, faça tal coisa
+        
+        if (favoritos.style.display != "flex") {
+            
+            document.getElementById("containerPesquisaMobile").animation = "containerPesquisaMobile .01s both"
+            document.getElementById("containerPesquisaDesktop").animation = "containerPesquisaDesktop .01s both"
+
+            if (document.getElementById("htmlwidth").clientWidth >= 1183) {
+                //desktop
+                document.getElementById("containerPesquisaMobile").style.display = "none"
+                document.getElementById("containerPesquisaDesktop").style.display = "flex"
+                header.style.paddingBottom = '0px'
+                console.log("desktop");
+            }
+            if (document.getElementById("htmlwidth").clientWidth < 1183) {
+                //mobile
+                document.getElementById("containerPesquisaMobile").style.display = "flex"
+                document.getElementById("containerPesquisaDesktop").style.display = "none"
+                header.style.paddingBottom = '20px'
+                console.log("mobile");
+
+            } 
+            
+        }
+
+
+    }
+
+
+            
+
 
         // verificar se se está logado ou não
         if (localStorage.getItem("sttsLogin") == null) {
             localStorage.setItem("sttsLogin", "deslogado");
         }
 
-        let containerMenu = document.getElementById("containerIconsMenu")
 
         function menu() {
-            if(containerMenu.style.display == "flex"){
-                containerMenu.style.display = "none"
-            }else{
+
+            //paths icon menu
+            let parte1DoX = document.getElementById("parte1DoX")
+            let parte2DoX = document.getElementById("parte2DoX")
+            let parte3DoX = document.getElementById("parte3DoX")
+
+
+            if(containerMenu.clientHeight == 0){
+                // esta invivivel, temos que deixar visivel
                 containerMenu.style.display = "flex"
+                containerMenu.style.animation = "menuAnimationOpen .5s both"
+
+                containerPesquisaMobile.style.animation = "containerPesquisaMobileClose .5s both"
+                setTimeout(function(){ 
+                    containerPesquisaMobile.style.display = "none"
+                }, 500);
+
+
+                // animação com os paths do com menu
+                parte1DoX.style.position = "absolute"
+                parte3DoX.style.position = "absolute"
+                
+                parte1DoX.style.animation = "fazendoX1 .5s both"
+                parte2DoX.style.display = "none"
+                parte3DoX.style.animation = "fazendoX3 .5s both"
+
+            }else{
+            
+                parte1DoX.style.animation = "desfazendoX1 .5s both"
+                
+                parte3DoX.style.animation = "desfazendoX3 .5s both"
+
+                setTimeout(function(){ 
+                    parte2DoX.style.display = "block"
+                    parte1DoX.style.position = "relative"
+                    parte3DoX.style.position = "relative"
+                }, 250);
+
+
+
+                containerMenu.style.animation = "menuAnimationClose .5s both"
+
+                containerPesquisaMobile.style.display = "flex"
+                containerPesquisaMobile.style.animation = "containerPesquisaMobile .5s both"
+                
+
+                setTimeout(function(){ 
+                    containerMenu.style.display = 'none' 
+                }, 500);
+
+
+
             }
         }
 
 
-        function fav() {
-            let favoritos = document.getElementById("favoritos")
+        function abaFavoritos() {
+            let htmlwidth = document.getElementById("htmlwidth")
+            let body = document.getElementById("body")
+            
+            let x = document.getElementById("x")
+            let containerIcons = document.querySelector(".containerIcons")
+            let boxFavoritos = document.querySelector(".boxFavoritos")
+            let shadow2 = document.querySelector(".shadow2")
 
-            console.log(favoritos.style.display);
 
-            if(favoritos.style.display == "block"){
-                favoritos.style.display = "none"
+            if(favoritos.style.display == "flex"){
+                // aqui é para deixar ele invisivel
+
+                //favoritos.style.display = 'none'
+                boxFavoritos.style.animation = "boxFavoritosClose .8s both"
+                shadow2.style.animation = "shadow2Close 1s both"
+
+                setTimeout(function(){ 
+                    favoritos.style.display = 'none' 
+                }, 500);
+
+                body.style.overflow = 'auto'
+                containerIcons.style.display = 'flex'
+                x.style.display = 'none'
+                // se for mobile tem que mostrar a barra de pesquisa mobile e deixar a outra invisivel
+                // se for desktop tem que mostrar a barra de pesquisa desktop e deixar a outra invisivel
+
+                console.log(htmlwidth.clientWidth);
+
+                if(htmlwidth.clientWidth >= 1189){
+                    console.log("descktop");
+
+                    containerPesquisaMobile.style.animation = "containerPesquisaMobileClose .5s both"
+                    setTimeout(function(){ 
+                        containerPesquisaMobile.style.display = "none"
+                    }, 500);
+
+                    containerPesquisaDesktop.style.display = "flex"
+                    containerPesquisaDesktop.style.animation = "containerPesquisaDesktop .5s both"
+                    header.style.paddingBottom = "0px"
+                }
+                else{
+                    console.log("mobile");
+                    header.style.paddingBottom = "20px"
+                    containerPesquisaMobile.style.display = "flex"
+                    containerPesquisaMobile.style.animation = "containerPesquisaMobile .5s both"
+
+                    containerPesquisaDesktop.style.animation = "containerPesquisaDesktopClose .3s both"
+                    setTimeout(function(){ 
+                        containerPesquisaDesktop.style.display = "none"
+                    }, 500);
+
+                    header.style.paddingBottom = "20px"
+                }
             }
             else{
-                favoritos.style.display = "block"
+                // aqui é pra deixar ele visivel
+                favoritos.style.display = 'flex'
+                boxFavoritos.style.animation = "boxFavoritos .5s both"
+                shadow2.style.animation = "shadow2 .5s both"
+
+                body.style.overflow = 'hidden'
+                containerIcons.style.display = 'none'
+                x.style.display = 'flex'
+                // deixar todas as barras de pesquisa invisives
+
+                containerPesquisaMobile.style.animation = "containerPesquisaMobileClose .5s both"
+                setTimeout(function(){ 
+                    containerPesquisaMobile.style.display = "none"
+                }, 500);
+
+                containerPesquisaDesktop.style.animation = "containerPesquisaDesktopClose .3s both"
+                setTimeout(function(){ 
+                    containerPesquisaDesktop.style.display = "none"
+                }, 500);
+
+
+                console.log(htmlwidth.clientWidth);
+
+                if(htmlwidth.clientWidth >= 1189){
+                    console.log("descktop");
+                    header.style.paddingBottom = "0px"
+                }
+                else{
+                    console.log("mobile");
+                    header.style.paddingBottom = "0px"
+                }
+
+                containerMenu.style.animation = "menuAnimationClose .5s both"
+                
+                
+                setTimeout(function(){ 
+                    containerMenu.style.display = 'none' 
+                }, 500);
             }
+            
+
         }
 
 
@@ -407,6 +646,8 @@
 
 
 
+    <script src="itens.js"></script>
+    <script src="favController.js"></script>
     <script src="controllerItens.js"></script>
 </body>
 </html>

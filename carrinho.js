@@ -13,26 +13,10 @@ if(splittedString.indexOf("") != -1){
 let subitracao = "subitracao"
 let adicao = "adicao"
 
-let precos = ['R$ 100,00']
-precos.push('R$ 200,00')
-precos.push('R$ 300,00')
-precos.push('400.00')
-precos.push('500.00')
-precos.push('600.00')
+let precos = localStorage.getItem("listaPrecos").split(',')
+let nomes = localStorage.getItem("listaNomes").split(',')
+let imgs = localStorage.getItem("listaImgs").split(',')
 
-let nomes = ['teste nome 1']
-nomes.push('teste nome 2')
-nomes.push('teste nome 3')
-nomes.push('400.00')
-nomes.push('500.00')
-nomes.push('600.00')
-
-let imgs = ['https://http2.mlstatic.com/D_Q_NP_796646-MLA52890992841_122022-AB.webp']
-imgs.push('https://http2.mlstatic.com/D_Q_NP_676823-MLB52319106923_112022-R.webp')
-imgs.push('https://http2.mlstatic.com/D_Q_NP_894157-MLB53446838916_012023-AB.webp')
-imgs.push('400.00')
-imgs.push('500.00')
-imgs.push('600.00')
 
 
 atualizarCar()

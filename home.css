@@ -4,6 +4,9 @@
     --fontSize2: 2em;
     --fontSize3: 3em;
 }
+html{
+    min-width: 98vw;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -34,6 +37,7 @@
 #cntrMensagemContaCriada{
     display: none;
 }
+
 
 .shadow .cntrX{
     background-color: #ffffff;
@@ -193,12 +197,52 @@ header{
     min-width: fit-content;
     margin: 0px 40px;
 }
-.containerPesquisa{
+.containerPesquisaMobile,
+    .containerPesquisaDesktop{
     display: flex;
     align-items: center;
     background-color: white;
     width: 60%;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 30%);
+    overflow: hidden;
+    height: fit-content;
+}
+@keyframes containerPesquisaMobile {
+    0%{
+        max-height: 0px;
+        opacity: 0;
+    }
+    100%{
+        max-height: 38px;
+        opacity: 1;
+    }
+}
+@keyframes containerPesquisaMobileClose {
+    0%{
+        max-height: 38px;
+        opacity: 1;
+    }
+    100%{
+        max-height: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes containerPesquisaDesktop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes containerPesquisaDesktopClose {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }
 .inputPesquisa{
     width: 100%;
@@ -230,24 +274,114 @@ header svg{
 .containerIcons svg:nth-child(1){
     fill: white;
 }
+
+.containerIcons svg{
+    position: relative;
+}
+.containerIcons svg:nth-child(1){
+    animation: iconsHeaderAnimation1 1s both;
+}
+.containerIcons svg:nth-child(2){
+    animation: iconsHeaderAnimation2 1s both;
+}
+.containerIcons {
+    position: relative;
+    animation: iconsHeaderAnimation 1s both;
+}
+
+@keyframes iconsHeaderAnimation1 {
+    0%{
+        right: -108px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes iconsHeaderAnimation2 {
+    0%{
+        right: -50px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes iconsHeaderAnimation {
+    0%{
+        right: -100px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+
+
+
 .containerPesquisaMobile{
     display: none;
 }
-.menu{
-    display: none;
+.cntrNewMenu{
+    padding: 10px 20px;
+}
+.cntrNewMenu span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+}
+
+.cntrNewMenu div{
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+
+@keyframes fazendoX1 {
+
+    100%{
+        transform: rotate(45deg);
+    }
+}
+@keyframes fazendoX3 {
+
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes desfazendoX1 {
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes desfazendoX3 {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 @media only screen and (max-width : 1200px){
-    .containerPesquisaMobile{
+    #containerPesquisaMobile{
         display: flex;
     }
-    .containerPesquisaDesktop{
+    #containerPesquisaDesktop{
         display: none;
     }
-    .containerPesquisaMobile{
+    #containerPesquisaMobile{
         width: 90%;
         margin: auto;
     }
+
     header{
         padding-bottom: 20px;
     }
@@ -257,8 +391,8 @@ header svg{
     .iconForDesck{
         display: none;
     }
-    .menu{
-        display: block;
+    .cntrNewMenu{
+        display: flex;
     }
 }
 .cursorPointer{
@@ -266,52 +400,171 @@ header svg{
 }
 
 .containerIconsMenu{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-around;
-    fill: white;
     color: white;
-    margin: 10px 20px;
+    fill: white;
 }
 .containerIconsMenu span{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    flex-direction: column;
     width: 100%;
-    margin: 8px;
-    margin-bottom: 18px;
-    padding: 20px 0px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
-
+    height: 100%;
+    padding-top: 20px;
 }
 .containerIconsMenu span:hover{
-    background-color: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0px 0px 10px #3b135a;
-    letter-spacing: 1px;
+    opacity: .7;
 }
-
+.containerIconsMenu svg{
+    width: 22px;
+    height: 22px;
+}
 .containerIconsMenu span p{
-    font-size: var(--fontSizePadrao);
+    font-size: .8em;
     margin-top: 10px;
 }
-.containerIconsMenu{
-    display: none;
+
+
+@keyframes menuAnimationOpen {
+    0%{
+        max-height: 0px;
+        opacity: 0;
+    }
+    100%{
+        max-height: 70px;
+        opacity: 1;
+    }
 }
-
-
+@keyframes menuAnimationClose {
+    0%{
+        max-height: 70px;
+        opacity: 1;
+    }
+    100%{
+        max-height: 0px;
+        opacity: 0;
+    }
+}
 /* fim do header*/
 
 
 #favoritos{
     display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
 }
+.shadow2{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+@keyframes shadow2 {
+    100%{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+@keyframes shadow2Close {
+    0%{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+.areaClicavel{
+    width: 100%;
+    height: 100%;
+}
+.boxFavoritos{
+    background-color: white;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0px 5px 20px 6px rgb(0 0 0 / 50%);
+    border-radius: 10px 0px 10px 10px;
+
+    overflow-y: scroll;
+    height: fit-content;
+    max-height: 76%;
+    position: relative;
+    right: -1000px;
+}
+@keyframes boxFavoritos {
+    100%{
+        right: 0px;
+    }
+}
+@keyframes boxFavoritosClose {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -1000px;
+    }
+}
+.boxFavoritos::-webkit-scrollbar {
+    width: 1px;
+}
+.cntrItensFavo{
+}
+.itemFavorito{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.itemFavorito .cntrBtnFavoritoInFavo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+.itemFavorito .cntrBtnFavoritoInFavo svg{
+    width: 100%;
+    height: 100%;
+}
+.cntrInfosItem{
+    display: flex;
+    align-items: center;
+    }
+.itemFavorito:last-child{
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+.itemFavorito img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.itemFavorito p{
+    font-size: 1em;
+    margin-left: 10px;
+}
+.itemFavorito .precosInFavo{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
 .gradeProdutos{
     padding: 20px;
 }
-.gradeProdutos > h1{
+.h1ProdutosMainFeed{
     font-size: var(--fontSizePadrao);
     margin-bottom: 20px;
 }
@@ -326,6 +579,7 @@ header svg{
     width: 24%;
     margin: 5px;
     cursor: pointer;
+    position: relative;
 }
 .gradeProdutos .blocoProduto:hover{
     background-color: white;
@@ -433,16 +687,52 @@ header svg{
 
 /*inicio do container dos produtos main*/
 .cntrBtnFavorito{
-    margin-top: 10px;
-    margin-right: 10px;
     position: absolute;
     display: none;
     justify-content: flex-end;
+    padding: 14px;
+    width: fit-content;
+    height: fit-content;
+    z-index: 10;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .cntrBtnFavorito svg{
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
+
+.blocoProduto:hover svg{
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    fill: black;
+
+}
+
+.coracaoVermelho{
+    display: none;
+}
+.coracaoBranco{
+    display: flex;
+    fill: #999;
+}
+  
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      filter: brightness(100%);
+    }
+    100% {
+      transform: scale(1.1);
+      filter: brightness(110%);
+    }
+}
+
 
 /*fim do container dos produtos main*/
 
@@ -544,3 +834,219 @@ header svg{
 .containerAnuncio img{
     width: 100%;
 }
+#x{
+    fill: white;
+    cursor: pointer;
+    display: none;
+    animation: animacaoXFav .5s both;
+    padding: 10px 0px;
+
+}
+@keyframes animacaoXFav {
+
+    100%{
+        padding: 10px 30px;
+    }
+
+}
+#x svg{
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (max-width : 1000px){
+    .areaClicavel{
+        width: 50%;
+    }
+}   
+@media only screen and (max-width : 800px){
+    .areaClicavel{
+        width: 20%;
+    }
+}                                                                                                                                                                                                                                                                                 
+
+
+
+
+
+
+
+/* ITEM EM DESTAQUE */
+
+
+    .cntrItemEmDestaque{
+        padding: 20px;
+    }
+    .cntrProdutoEmDestaque{
+        border: 1px solid #ddd;
+        background-color: white;
+    }
+    .cntrImgAndInfoProdutoDestaque{
+        display: flex;
+    }
+    .cntrImgProdutoDestaque{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cntrImgProdutoDestaque img{
+        width: 80%;
+    }
+    .cntrInfosProdutoDestaque{
+        width: 100%;
+        color: black;
+        font-size: 1.3em;
+        padding: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+    }
+    .cntrOfertaQuente{
+        background-image: linear-gradient(-45deg, red, orange);
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: 10px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    .cntrOfertaQuenteMobile{
+        display: none;
+    }
+
+    .cntrOfertaQuente p{
+        font-size: 20px;
+    }
+    .nomeProdutoDestaque{
+        font-size: 1.2em;
+        margin-bottom: 28px;
+    }
+    .nomeProdutoDestaqueMobile{
+        display: none;
+        margin: 20px;
+        font-size: 1.4em;
+
+    }
+    .precoAntigoProdutoDestaque{
+        margin-bottom: 10px;
+        color: #666;
+        text-decoration: line-through;
+        font-size: .8em;
+    }
+    .cntrInfosProdutoDestaque > span{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .precoProdutoDestaque{
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-right: 20px;
+    }
+
+    .descontoProdutoDestaque{
+        color: green;
+        font-size: .8em;
+    }
+    .descontoProdutoDestaque span{
+        font-weight: bold;
+    }
+    .parcelasProdutoDestaque{
+        margin-bottom: 20px;
+        font-size: .8em;
+
+    }
+    .parcelasProdutoDestaque span{
+        color: green;
+        font-weight: bold;
+        font-size: 1em;
+
+    }
+    .descricaoProdutoDestaque{
+        font-size: .8em;
+        color:#666;
+    }
+    .cntrBtnVerDetalhes{
+        width: 100%;
+        margin: 20px 20px 0px 0px;
+        text-align: end;
+    }
+    .cntrBtnVerDetalhes button{
+        padding: 10px 40px;
+        font-size: .9em;
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid #fff;
+        background-color: #3483fa;
+        cursor: pointer;
+        animation: btnVerMaisProdutoDestaque 1.5s infinite;
+    }
+
+    .cntrInfosProdutoDestaque button:hover{
+        background-color: #286fda;
+    }
+    @keyframes btnVerMaisProdutoDestaque {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.05);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+
+
+    @media only screen and (max-width : 890px){
+
+        .cntrOfertaQuenteMobile{
+            display: block;
+        }
+        .cntrOfertaQuenteDesktop{
+            display: none;
+        }
+        .maisVendidos{
+            display: none;
+        }
+    } 
+
+    @media only screen and (max-width : 830px){
+        
+        .nomeProdutoDestaqueDesktop{
+            display: none;
+        }
+        .nomeProdutoDestaqueMobile{
+            display: block;
+        }
+        .cntrInfosProdutoDestaque{
+            padding-top: 0px;
+        }
+
+    }   
+    
+    @media only screen and (max-width : 780px){
+        .cntrInfosProdutoDestaque > span {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .precoProdutoDestaque{
+            margin-bottom: 10px;
+        }
+        
+
+    }  
+    @media only screen and (max-width : 666px){
+        .cntrImgAndInfoProdutoDestaque {
+            flex-direction: column;
+        }
+        .cntrImgProdutoDestaque img {
+            width: 50%;
+        }
+    }   
+    
+/* FIM - item em destaque */
