@@ -24,13 +24,13 @@
             <div class="cntrFav" id="cntrCoracaoRed" onclick="controllerCoracao('vermelho')">
                 <!-- svg coração-->
                         <svg id="coracaoRed" class="coracaoVermelho" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M471.383 44.578C444.879 15.832 408.512 0 368.973 0c-29.555 0-56.621 9.344-80.45 27.77C276.5 37.07 265.605 48.45 256 61.73c-9.602-13.277-20.5-24.66-32.527-33.96C199.648 9.344 172.582 0 143.027 0c-39.539 0-75.91 15.832-102.414 44.578C14.426 72.988 0 111.801 0 153.871c0 43.3 16.137 82.938 50.781 124.742 30.992 37.395 75.535 75.356 127.117 119.313 17.614 15.012 37.579 32.027 58.309 50.152A30.023 30.023 0 0 0 256 455.516c7.285 0 14.316-2.641 19.785-7.43 20.73-18.129 40.707-35.152 58.328-50.172 51.575-43.95 96.117-81.906 127.11-119.305C495.867 236.81 512 197.172 512 153.867c0-42.066-14.426-80.879-40.617-109.289zm0 0" fill="#d93737" data-original="#000000" class=""></path></g></svg>
-                <p>Add aos favortos</p>
+                <p id="txtBtnFav">Remover dos fav.</p>
             </div>
 
-            <div class="cntrCar">
+            <div class="cntrCar" id="btnAddCarUp" onclick="addCar()">
                 <!-- svg carrinho-->
-                <svg onclick="window.location.href = 'carrinho.html'" class="cursorPointer iconForDesck" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="display: block;" xml:space="preserve"><g><path d="m2 3h3.208l3.535 15.026a2.992 2.992 0 0 0 .257 5.974h17a1 1 0 0 0 0-2h-17a1 1 0 0 1 0-2h16.882a2.99 2.99 0 0 0 2.92-2.313l2.119-9a3 3 0 0 0 -2.921-3.687h-20.267l-.759-3.229a1 1 0 0 0 -.974-.771h-4a1 1 0 0 0 0 2zm26 4a1.016 1.016 0 0 1 .974 1.229l-2.12 9a.994.994 0 0 1 -.972.771h-15.09l-2.592-11z" data-original="#000000" class="hovered-path"></path><path d="m20 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path><path d="m9 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path></g></svg>
-                <p>Add ao carrinho</p>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="display: block;" xml:space="preserve"><g><path d="m2 3h3.208l3.535 15.026a2.992 2.992 0 0 0 .257 5.974h17a1 1 0 0 0 0-2h-17a1 1 0 0 1 0-2h16.882a2.99 2.99 0 0 0 2.92-2.313l2.119-9a3 3 0 0 0 -2.921-3.687h-20.267l-.759-3.229a1 1 0 0 0 -.974-.771h-4a1 1 0 0 0 0 2zm26 4a1.016 1.016 0 0 1 .974 1.229l-2.12 9a.994.994 0 0 1 -.972.771h-15.09l-2.592-11z" data-original="#000000" class="hovered-path"></path><path d="m20 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path><path d="m9 28a3 3 0 1 0 3-3 3 3 0 0 0 -3 3zm4 0a1 1 0 1 1 -1-1 1 1 0 0 1 1 1z" data-original="#000000" class="hovered-path"></path></g></svg>
+                <p id="txtBtnAddCarUp">Add ao carrinho</p>
             </div>
         </div>
     </header>
@@ -325,7 +325,7 @@
 
                     <div class="containerBtnsBuy">
                         <button>Comprar agora</button>
-                        <button>Adicionar ao carrinho</button>
+                        <button id="btnAddCarMobile">Adicionar ao carrinho</button>
                     </div>
                 </span>
 
@@ -490,7 +490,7 @@
             </div>
 
             <div class="containerAnuncio">
-                <img src="https://http2.mlstatic.com/D_NQ_NP_727918-MLA53270802190_012023-OO.webp" alt="">
+                <a href="https://www.disneyplus.com/pt-br/login" target="_blank" rel="noopener noreferrer"><img src="https://http2.mlstatic.com/D_NQ_NP_727918-MLA53270802190_012023-OO.webp" alt=""></a>
             </div>
 
         </div>
@@ -510,7 +510,7 @@
                 </div>
                 <div class="containerBtnsBuy">
                     <button>Comprar agora</button>
-                    <button onclick="addCar()">Adicionar ao carrinho</button>
+                    <button id="btnAddCarDesktop" onclick="addCar()">Adicionar ao carrinho</button>
                 </div>
                 <div class="containerCredibilidades">
                     <div>
@@ -547,6 +547,30 @@
 
 
     <script>
+
+        // verificar se ja esta no carrinho para mudar o texto do botão 
+
+        let btnAddCarUp_txt = document.getElementById("txtBtnAddCarUp")
+        let btnAddCarDesktop = document.getElementById("btnAddCarDesktop")
+        let btnAddCarMobile = document.getElementById("btnAddCarMobile")
+
+        if (localStorage.getItem("idKeyAddCard").indexOf(localStorage.getItem("idKeyProdutoSelecionado")) > -1) {
+            console.log("já esta no carrinho");
+
+            btnAddCarUp_txt.innerHTML = "Ver no carrinho"
+            btnAddCarDesktop.innerHTML = "Ver no carrinho"
+            btnAddCarMobile.innerHTML = "Ver no carrinho"
+
+            btnAddCarDesktop.style.animationPlayState = "running";
+            btnAddCarMobile.style.animationPlayState = "running";
+
+            document.getElementById("btnAddCarUp").style.animationPlayState = "running";
+        }
+        else{
+            console.log("Não esta no carrinho");
+        }
+
+
 
         // favoritar
         let indice3 = localStorage.getItem("idKeyAddFav")
@@ -607,8 +631,30 @@
             
             if (localStorage.getItem("idKeyAddCard").indexOf(localStorage.getItem("idKeyProdutoSelecionado")) > -1) {
                 console.log("já esta no car");
+                window.location.href = "carrinho.html"
             }else{
-                console.log("add no car");
+
+                btnAddCarUp_txt.innerHTML = "Adicionado"
+                btnAddCarDesktop.innerHTML = "Adicionado com sucesso"
+                btnAddCarMobile.innerHTML = "Adicionado com sucesso"
+
+                //Ativar animação que muda a cor
+                btnAddCarDesktop.style.animationPlayState = "running";
+                btnAddCarMobile.style.animationPlayState = "running";
+                document.getElementById("btnAddCarUp").style.animationPlayState = "running";
+
+                // segundos dps o txt vai de "Adicionado com sucesso" para "Ver no carrinho"
+                setTimeout(function(){ 
+                    btnAddCarDesktop.innerHTML = "Ver no carrinho"
+                    btnAddCarMobile.innerHTML = "Ver no carrinho"
+
+                    // volta a ter a cor de antes, via animação
+                    btnAddCarDesktop.style.animation = "btnAddCarBack 1s both"
+                    btnAddCarMobile.style.animation = "btnAddCarBack 1s both"
+
+
+                }, 3000);
+
                 if (localStorage.getItem("idKeyAddCard") == null) {
                     localStorage.setItem("idKeyAddCard", localStorage.getItem("idKeyProdutoSelecionado"))
                 }else{

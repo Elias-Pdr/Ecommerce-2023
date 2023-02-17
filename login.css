@@ -10,9 +10,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-html{
 
-}
 body{
     width: 100%;
     height: 100%;
@@ -24,40 +22,64 @@ header{
     color: white;
     padding: 10px 20px;
 }
-.cntrMain{
-    display: flex;
-    width: 100%;
 
-}
-.cntrImg{
+
+
+.cntrMain{
+    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-around;
+    margin: 40px 20px;
+}
+main{
+    background-color: white;
     padding: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+.cntrImg{
+    width: 40%;
+
 }
 .cntrImg img{
     width: 100%;
 }
-@media only screen and (max-width : 1100px){
-    .cntrImg{
-       display: none;
-    }
-    body{
-        width: 100%;
-        height: 100%;
-        background-color: hsla(274, 65%, 19%, 0.3);
+
+
+
+
+@media only screen and (max-width : 1000px){
+    
+    .cntrImg,
+    main{
+        width: 50%;
     }
 }
-main {
-    background-color: white;
-    max-width: 450px;
-    min-width: 360px;
-    width: 450px;
-    border: 1px solid #ddd;
-    margin: 40px;
-    padding: 20px;
-    box-shadow: 0px 0px 20px 10px hwb(0 0% 100% / 0.1);
+
+@media only screen and (max-width : 850px){
+    body{
+        background-color: white;
+    }
+    .cntrImg{
+        display: none;
+    }
+    main{
+        max-width: none;
+        width: 80%;
+        box-shadow: none;
+
+    }
+}
+
+@media only screen and (max-width : 750px){
+    main{
+        max-width: none;
+        width: 90%;
+        box-shadow: none;
+    }
 }
 
 .cntrSvgPerfil{
@@ -86,6 +108,19 @@ main {
     height: 30px;
     margin: 0px 10px;
 }
+.cntrOlhos{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.cntrOlhos svg{
+    width: 30px;
+    height: 30px;
+    margin: 0px 1px;
+}
 .cntrInputs .olhoFechado{
     display: block;
 }
@@ -98,6 +133,16 @@ main {
     outline: none;
     margin-left: 10px;
     font-size: .9em;
+}
+.ctnrErro{
+    color: #DB0606;
+    display: none;
+    align-items: center;
+    font-size: .8em;
+}
+.ctnrErro svg{
+    width: 20px;
+    height: 20px;
 }
 .cntrInputs button{
     width: 100%;
@@ -144,7 +189,7 @@ main {
     align-items: center;
     margin: 20px 0px 10px 0px;
     height: 50px;
-
+    cursor: pointer;
 }
 .cntrGoogle svg{
     width: 30px;
@@ -165,14 +210,14 @@ main {
     display: block;
     display: none;
     */
-    display: none;
+    display: block;
 }
 #cntrCadastrar{
     /*
     display: block;
     display: none;
     */
-    display: block;
+    display: none;
 }
 
 .cntrBox1{
@@ -188,6 +233,7 @@ main {
     display: none;
     */
     display: none;
+    
 }
 .cntrBox3{
     /*
@@ -204,4 +250,7 @@ main {
 }
 .imgFundo img{
     
+}
+#btnContinuar{
+    background-color: #f0f0f0;
 }

@@ -58,7 +58,7 @@
                 <div id="boxCriarConta">
                     <h1>Ainda não tem uma conta na Dropshipping?</h1>
                     <p>Tá esperando o que??</p>
-                    <button>Entrar ou criar conta</button>
+                    <button onclick="window.location.href = 'login.html'">Entrar ou criar conta</button>
                 </div>
             </div>
 
@@ -232,7 +232,7 @@
         dataDeEntrega.innerHTML = resultado
 
         // verificar se se está logado ou não
-        if (localStorage.getItem("sttsLogin") == "deslogado") {
+        if (localStorage.getItem("sttsLogin") != "logado") {
             // mostrar box login
             document.getElementById("cntrCriarConta").style.display = "block"
 

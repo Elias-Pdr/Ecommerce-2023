@@ -88,7 +88,7 @@ header{
     height: 24px;
     fill: white;
 }
-#cntrCoracaoRed{
+#btnAddCarUpcntrCoracaoRed{
     display: none;
 }
 .cntrIconsHeader p{
@@ -384,6 +384,11 @@ main{
     border-color: transparent;
     color: #3483fa;
 }
+.containerBtnsBuy button:last-child:hover{
+    background-color: rgba(65,137,230,.2);
+    border-color: transparent;
+    color: #3483fa;
+}
 .containerCredibilidades > div{
     display: flex;
     align-items: center;
@@ -588,7 +593,9 @@ main{
 }
 .containerAnuncio img{
     width: 100%;
+    cursor: pointer;
 }
+
 
 footer{
     color: #999;
@@ -881,4 +888,53 @@ footer p{
     display: flex;
     align-items: center;
     
+}
+
+
+
+#btnAddCarUp{
+    animation: btnAddCarUp 1s both paused;
+}   
+@keyframes btnAddCarUp {
+    0%{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    100%{
+        background-color: #03240033;
+    }
+}
+#btnAddCarDesktop,
+#btnAddCarMobile{
+    animation: btnAddCar 1s both paused;
+}
+#btnAddCarDesktop:hover,
+#btnAddCarMobile:hover{
+    
+}
+
+
+@keyframes btnAddCar {
+    0%{
+        background-color: rgba(65,137,230,.15);
+        color: #3483fa;
+    }
+    100%{
+        background-color: #00a650;
+        color: white;
+    }
+}
+
+@keyframes btnAddCarBack {
+    0%{
+        background-color: #00a650;
+        color: white;
+    }
+    100%{
+        background-color: rgba(65,137,230,.15);
+        color: #3483fa;
+    }
+}
+
+#cntrCoracaoRed{
+    background-color: #240b0033;
 }
