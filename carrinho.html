@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
     <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="errorCity.css">
+
 </head>
 <body>
+    <div class="errorCity">
+        <div class="boxErrorCity">
+            <span>
+                <svg class="iconErro" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 90 90" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M45.109 58.026a5.733 5.733 0 0 1 5.734 5.74 5.73 5.73 0 0 1-5.734 5.729c-3.167 0-5.734-2.563-5.734-5.729s2.567-5.734 5.734-5.74zm-2.417-37.443h4.839c2.271 0 4.099 2.109 4.099 4.729l-1.438 23.229c0 2.62-1.833 4.729-5.083 4.729s-5.078-2.109-5.078-4.729l-1.438-23.229c.001-2.619 1.829-4.729 4.099-4.729zm2.417-11.426c-19.817 0-35.885 16.063-35.885 35.885 0 19.817 16.067 35.88 35.885 35.88 19.816.006 35.884-16.063 35.884-35.88 0-19.822-16.067-35.885-35.884-35.885z" fill="#db0606" data-original="#000000" class=""></path></g></svg>
+                <h1>Erro</h1>
+            </span>
+            <p>Erro ao procurar cidades vinculadas ao CEP <span class="cep">12312312</span></p>
+            <button onclick="preenchManual()">Preencher manualmente</button>
+            <small>Erro [5CF3]</small>
+        </div>
+        <div class="informCity">
+            <h1>Endereço</h1>
+            <div class="ctnrInput">
+                <label for="cepErrorCity">
+                    <p>CEP</p>
+                    <input type="number" name="cepErrorCity" id="cepErrorCity">
+                </label>
+            </div>
+            <div class="ctnrInput">
+                <label for="estadoErrorCity">
+                    <p>Estado</p>
+                    <input type="text" name="estadoErrorCity" id="estadoErrorCity">
+                </label>
+            </div>
+            <div class="ctnrInput">
+                <label for="cidadeErrorCity">
+                    <p>Cidade</p>
+                    <input type="text" name="cidadeErrorCity" id="cidadeErrorCity">
+                </label>
+            </div>
+
+            <span>
+                <button onclick="cancelar()">Cancelar</button>
+                <button onclick="salvar('carrinho.html')">Salvar</button>
+            </span>
+        </div>
+    </div>
+
+
+
     <header class="headerMobile">
         <header>
             <h1 onclick="window.location.href = 'home.html'">Dropshipping</h1>
@@ -64,13 +106,10 @@
 
             <div class="boxLateral displayNoneNotAccount">
                <div class="cntrInfosPessoais">
-                <h1>Endereço</h1>
-                <p class="nomeDaPessoa">Veneza Jerusaleno Mesquita</p>
-                <p class="numeroDaPessoa">(+55) 24 99842-8760</p>
-                <p class="enderecoDaPessoa">
-                    R Antoun Affif, 15a, Mercearia MGG, Nova Angra (Cunhambebe)<br><br>Angra dos Reis, Rio de Janeiro, 239333180
-                </p>
-
+                    <h1>Endereço</h1>
+                    <p class="nomeDaPessoa"></p>
+                    <p class="numeroDaPessoa"></p>
+                    <p class="enderecoDaPessoa"></p>
                </div> 
             </div>
 
@@ -492,6 +531,6 @@
     <script src="carrinho.js"></script>
     <script src="infosPessoais.js"></script>
     <script src="itens.js"></script>
-
+    <script src="errorCity.js"></script>
 </body>
 </html>

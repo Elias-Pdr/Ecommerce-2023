@@ -20,7 +20,7 @@ if (document.querySelectorAll(".numeroDaPessoa")) {
 if (document.querySelectorAll(".enderecoDaPessoa")) {
     let enderecoDaPessoa = document.querySelectorAll(".enderecoDaPessoa")
     for (let i = 0; i < enderecoDaPessoa.length; i++) {
-        enderecoDaPessoa[i].innerHTML = localStorage.getItem("CEP") + ", " + localStorage.getItem("Cidade") + ", " + localStorage.getItem("NomeRua") + ", Nº" + localStorage.getItem("NumeroCasa")
+        enderecoDaPessoa[i].innerHTML = localStorage.getItem("CEP") + ", " + localStorage.getItem("Estado") + ", " + localStorage.getItem("Cidade")+ ", " + localStorage.getItem("bairro")+ ", " + localStorage.getItem("NomeRua") + ", Nº" + localStorage.getItem("NumeroCasa")
         
     }
 }

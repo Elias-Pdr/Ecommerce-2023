@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -172,20 +172,33 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0px 20px;
     background-color: whitesmoke;
     border-bottom: 1px solid #ddd;
 }
 .cntrDados span:nth-child(1){
     border-top: 1px solid #ddd;
 }
-
+.cntrDados div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 15px;
+    margin: 10px;
+    min-width: 50%;
+    cursor: pointer;
+}
 .cntrDados p{
     font-size: 1em;
+    margin: 0px 0px;
 }
 .cntrDados svg{
     width: 10px;
     height: 10px;
+
+    min-width: 10px;
+    min-height: 10px;
+
     margin-left: 10px;
 }
 

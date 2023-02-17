@@ -1,0 +1,108 @@
+.errorCity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.boxErrorCity,
+.informCity{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+.boxErrorCity span{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.boxErrorCity .iconErro{
+    width: 22px;
+    height: 22px;
+}
+.boxErrorCity h1{
+    color: #db0606;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+.boxErrorCity p{
+    font-size: 1em;
+    margin: 10px 0px;
+}
+.boxErrorCity button{
+    padding: 10px 5px;
+    font-size: .8em;
+}
+.boxErrorCity small{
+    margin-top: 10px;
+    font-size: .7em;
+    text-align: end;
+}
+
+.informCity{
+    min-width: 350px;
+}
+.informCity h1{
+    color: black;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.ctnrInput{
+    background-color: aliceblue;
+    margin: 10px 0px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.informCity p{
+    font-size: .8em;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 2px 6px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    left: 10px;
+}
+.informCity input{
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    width: 100%;
+    
+    border: 1px solid #999;
+    font-size: .9em;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.informCity span{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+}
+.informCity span button{
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    color: #2968c8;
+    font-size: .9em;
+    cursor: pointer;
+}   
+.informCity span button:last-child{
+    margin-left: 10px;
+    background: #2968c8;
+    color: white;
+    border-radius: 10px;
+}

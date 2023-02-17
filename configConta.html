@@ -13,14 +13,14 @@
             <!-- svg perfil -->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M16 2a14 14 0 1 0 14 14A14 14 0 0 0 16 2zM9 25.74a7 7 0 0 1 14 0 11.94 11.94 0 0 1-14 0zm15.8-1.61a9 9 0 0 0-17.6 0 12 12 0 1 1 17.6 0zM16 6a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3z" data-name="Layer 38" fill="#000000" data-original="#000000"></path></g></svg>
         </div>
-        <h1>Editar Perfil</h1>
+        <h1>Editar perfil</h1>
         <div class="shadowCntrInput">
-            <label for="input">Nome</label>
-            <input type="text" name="input" id="input">
+            <label for="inputEdit" id="title"></label>
+            <input type="text" name="inputEdit" id="inputEdit">
         </div>
         <div class="shadowCntrBtn">
-            <button>Cancelar</button>
-            <button>Salvar</button>
+            <button onclick="cancelar()">Cancelar</button>
+            <button onclick="salvar()">Salvar</button>
         </div>
     </div>
 </div>
@@ -46,34 +46,35 @@
                 <h2>Gerenciar e proteger sua conta</h2>
             </div>
             <div class="cntrDados">
-                <span>
+                <span onclick="edit('Digite seu nome completo', 'nomeCompletoConta', 'NomeCompleto', 'text')">
                     <p>Nome Completo</p>
-                    <p>
-                        Pedro Elias Brabão de Pegar
+                    <div>
+                        <p id="nomeCompletoConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
+                    
                 </span>
-                <span>
+                <span onclick="edit('Digite seu nome de usuário', 'nickNameConta', 'NickName', 'text')">
                     <p>Usuário</p>
-                    <p>
-                        brabão_de_pegar
+                    <div>
+                        <p id="nickNameConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
             
                 </span>
-                <span>
+                <span onclick="edit('Digite seu telefone', 'telefoneConta', 'Celular', 'tel')">
                     <p>Telefone</p>
-                    <p>
-                        (24) 99823-4234
+                    <div>
+                        <p id="telefoneConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
-                <span>
+                <span onclick="edit('Digite seu email', 'emailConta', 'Email', 'email')">
                     <p>Email</p>
-                    <p>
-                        pedroeliaspedro22@gmail.com
+                    <div>
+                        <p id="emailConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
             </div>
         </div>
@@ -83,41 +84,41 @@
                 <h1>Endereço</h1>
             </div>
             <div class="cntrDados">
-                <span>
+                <span onclick="edit('Digite seu CEP', 'CEPConta', 'CEP', 'number')">
                     <p>CEP</p>
-                    <p>
-                        123123123-600
+                    <div>
+                        <p id="CEPConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
-                <span>
+                <span onclick="edit('Digite seu estado e cidade', 'estadoCidadeConta', 'Cidade', 'text')">
                     <p>Estado - Cidade</p>
-                    <p>
-                        Angra dos Reis, RJ
+                    <div>
+                        <p id="estadoCidadeConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
             
                 </span>
-                <span>
+                <span onclick="edit('Digite o bairro', 'bairroConta', 'bairro', 'text')">
                     <p>Bairro</p>
-                    <p>
-                        Banqueta
+                    <div>
+                        <p id="bairroConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
-                <span>
+                <span onclick="edit('Digite o nome da rua', 'nomeRuaConta', 'NomeRua', 'text')">
                     <p>Nome da rua</p>
-                    <p>
-                        Recanto dos Amigos
+                    <div>
+                        <p id="nomeRuaConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
-                <span>
+                <span onclick="edit('Digite o número da casa', 'numeroCasaConta', 'NumeroCasa', 'number')">
                     <p>Número da casa</p>
-                    <p>
-                        15a
+                    <div>
+                        <p id="numeroCasaConta" class="infos"></p>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="m360.731 229.075-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z" fill="#000000" data-original="#000000"></path></g></svg>
-                    </p>
+                    </div>
                 </span>
             </div>
         </div>
@@ -129,5 +130,76 @@
             <p>CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Livre Mercado.</p>
         </div>
     </footer>
+
+
+
+    <script>
+        let nomeCompleto = document.getElementById("nomeCompletoConta")
+        let nickName = document.getElementById("nickNameConta")
+        let telefone = document.getElementById("telefoneConta")
+        let email = document.getElementById("emailConta")
+
+        let CEP = document.getElementById("CEPConta")
+        let estadoCidade = document.getElementById("estadoCidadeConta")
+        let nomeRua = document.getElementById("nomeRuaConta")
+        let bairro = document.getElementById("bairroConta")
+        let numeroCasa = document.getElementById("numeroCasaConta")
+
+        nomeCompleto.innerHTML = localStorage.getItem("NomeCompleto")
+        nickName.innerHTML = localStorage.getItem("NickName")
+        telefone.innerHTML = localStorage.getItem("Celular")
+        email.innerHTML = localStorage.getItem("Email")
+        
+        CEP.innerHTML = localStorage.getItem("CEP")
+        estadoCidade.innerHTML = localStorage.getItem("Cidade") + ", " + localStorage.getItem("Estado")
+        bairro.innerHTML = localStorage.getItem("bairro")
+        nomeRua.innerHTML = localStorage.getItem("NomeRua")
+        numeroCasa.innerHTML = localStorage.getItem("NumeroCasa")
+
+        let infos = document.querySelectorAll(".infos")
+
+        for (let i = 0; i < infos.length; i++) {
+            if ( infos[i].innerHTML == "") {
+                infos[i].innerHTML = "Não informado"
+                infos[i].style.color = "red"
+            }else{
+                infos[i].style.color = "black"
+            }
+            
+        }
+        let shadow = document.querySelector(".shadow")
+
+        let labelTxt = document.getElementById("title")
+        let inputEdit = document.getElementById("inputEdit")
+        let localStgForEdit = ''
+        let idForEdit = ''
+
+        function edit(title, idTxt, localStg, typeInfo){
+            inputEdit.value = ''
+            shadow.style.display = "flex"
+
+            labelTxt.innerHTML = title
+            inputEdit.type = typeInfo
+
+            localStgForEdit = localStg
+            idForEdit = idTxt
+        }
+
+        function cancelar(){
+            shadow.style.display = "none"
+        }
+        function salvar(){
+            console.log(localStgForEdit);
+            console.log(idForEdit);
+
+            if (inputEdit.value.length >= 1) {
+                localStorage.setItem(localStgForEdit, inputEdit.value)
+                document.getElementById(idForEdit).innerHTML = localStorage.getItem(localStgForEdit)
+                shadow.style.display = "none"
+
+            }
+        }
+        
+    </script>
 </body>
 </html>
